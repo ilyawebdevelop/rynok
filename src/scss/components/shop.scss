@@ -1,0 +1,62 @@
+.shop {
+
+  &Card {
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 48px;
+
+    @media(max-width: 991px) {
+      border-radius: 40px;
+    }
+
+    &Image {
+      box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+      display: flex;
+      border-radius: 48px;
+
+      @media(max-width: 991px) {
+        border-radius: 40px;
+      }
+
+      &:hover {
+        opacity: .85;
+      }
+
+      img {
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 48px;
+
+        @media(max-width: 991px) {
+          border-radius: 40px;
+        }
+      }
+    }
+
+    &Title {
+      font-family: var(--second-family);
+      opacity: .8;
+      line-height: 133%;
+    }
+
+    &Subtitle {
+      margin-bottom: 8px;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 6px;
+        row-gap: 6px;
+
+        li {
+          color: var(--orange);
+        }
+      }
+    }
+
+    &Content {
+      padding: 24px 32px 60px;
+    }
+  }
+}

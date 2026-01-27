@@ -1,0 +1,199 @@
+<!-- modal -->
+<!-- rent -->
+<div class="modal" id="modalRent">
+
+  <div class="modalHead">
+    <div class="sectHead">
+      <h3 class="h3">Стать арендатором</h3>
+    </div>
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <div class="modalForm">
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Имя контактного лица</div>
+        <input type="text" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Телефон</div>
+        <input type="tel" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">E-mail</div>
+        <input type="email" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Комментарий</div>
+        <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+      </div>
+
+      <div class="formBtnW mt-4">
+        <button class="button button--brown-20 formBtn" data-fancybox-close>
+          Отменить
+        </button>
+        <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+          Отправить
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- good -->
+<div class="modal" id="modalGood">
+
+  <div class="modalHead">
+    <div class="sectHead">
+      <h3 class="h3">Похвалить<br class="d-none d-lg-block"> работу рынка</h3>
+    </div>
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <div class="modalForm">
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+        <input type="text" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+        <input type="tel" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Текст благодарности</div>
+        <textarea class="formText" name="modalGoodComment" id="modalGoodComment"></textarea>
+      </div>
+
+      <div class="formBtnW mt-4">
+        <button class="button button--brown-20 formBtn" data-fancybox-close>
+          Отменить
+        </button>
+        <button class="button button--orange formBtn" data-fancybox data-src="#modalThanksReviews">
+          Отправить
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- bad -->
+<div class="modal" id="modalBad">
+
+  <div class="modalHead">
+    <div class="sectHead">
+      <h3 class="h3">Пожаловаться на&nbsp;работу рынка</h3>
+    </div>
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <div class="modalForm">
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+        <input type="text" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+        <input type="tel" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Текст жалобы</div>
+        <textarea class="formText" name="modalBadComment" id="modalBadComment"></textarea>
+      </div>
+
+      <div class="formBtnW mt-4">
+        <button class="button button--brown-20 formBtn" data-fancybox-close>
+          Отменить
+        </button>
+        <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+          Отправить
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Thanks -->
+<div class="modal" id="modalThanks">
+
+  <div class="modalHead">
+
+    <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <div class="content text--md">
+      <p>
+        Мы ценим каждую обратную связь.<br> После получения вашей жалобы мы:
+      </p>
+      <ul>
+        <li>
+          Направим заявку в ответственный отдел для детального разбора.
+        </li>
+        <li>
+          Проведём проверку указанных фактов в течение 5 рабочих дней.
+        </li>
+        <li>
+          Свяжемся с вами по указанному телефону, чтобы сообщить о принятых мерах.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Thanks -->
+<div class="modal" id="modalThanksReviews">
+
+  <div class="modalHead">
+
+    <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <div class="content text--md">
+      <p>
+        Вы можете оставить отзыв на других площадках:
+      </p>
+      <div class="d-flex flex-column flex-sm-row gap-3 mt-4 mt-lg-5">
+        <a class="reviews-thanks-logo" href="#" target="_blank">
+          <img src="@img/admin/reviews/image-1.svg" alt="image">
+        </a>
+        <a class="reviews-thanks-logo" href="#" target="_blank">
+          <img src="@img/admin/reviews/image-2.svg" alt="image">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

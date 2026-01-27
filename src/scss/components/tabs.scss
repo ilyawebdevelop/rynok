@@ -1,0 +1,54 @@
+.tabs {
+  &__nav {
+    display: flex;
+    column-gap: 12px;
+    row-gap: 12px;
+    width: fit-content;
+    flex-wrap: wrap;
+    @media(max-width: 991px){
+      column-gap: 8px;
+      row-gap: 8px;
+    }
+
+
+    &-btn {
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      border-radius: 14px;
+      padding-left: 24px;
+      padding-right: 24px;
+      border-radius: 100px;
+      border: 1px solid var(--brown50);
+      color: var(--brown50);
+      transition: background-color .2s linear, color .2s linear, border-color .2s linear;
+      @media(max-width: 991px){
+        height: 40px;
+      }
+
+      &:hover {
+        background-color: var(--orange);
+        color: #fff;
+        border-color: var(--orange);
+      }
+
+      &--active {
+        background-color: var(--orange);
+        color: #fff;
+        border-color: var(--orange);
+      }
+    }
+  }
+
+  &__panel {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

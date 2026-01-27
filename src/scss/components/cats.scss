@@ -1,0 +1,63 @@
+.cats {
+  .sectHead {
+    @media(max-width: 575px){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &.overflow-hidden {
+    @media(max-width: 575px) {
+      overflow: visible !important;
+    }
+  }
+  .container {
+    @media(max-width: 575px){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &Slider {
+    overflow: visible;
+
+    @media(max-width: 575px) {
+      padding-left: 15px;
+      overflow: hidden;
+      padding-right: 50px;   
+    }
+  }
+
+  &Slide {
+    height: auto;
+
+    .shopCard {
+      height: 100%;
+    }
+  }
+
+  .tabs__nav {
+    @media(max-width: 575px) {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+
+  .tabs__nav-btn {
+    @media(max-width: 575px) {
+      white-space: nowrap;
+    }
+  }
+}
+
+.catsTabs {
+  .tabs__nav {
+    margin-bottom: 30px;
+    @media(max-width: 991px){
+      margin-bottom: 24px;
+    }
+  }
+}

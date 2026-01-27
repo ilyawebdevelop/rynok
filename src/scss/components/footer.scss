@@ -1,0 +1,116 @@
+// Footer
+.footer {
+  &T {
+    background: var(--brown50);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media(max-width: 991px){
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &W {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media(max-width: 991px){
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 40px;
+      }
+      .button {
+        @media(max-width: 1199px){
+          min-width: 230px;
+        }
+        @media(max-width: 420px){
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &Nav {
+    @media(max-width: 575px){
+      padding-left: 24px;
+    }
+    ul {
+      display: flex;
+      column-gap: 30px;
+      @media(max-width: 1500px){
+        column-gap: 15px;
+      }
+      @media(max-width: 767px){
+        flex-direction: column;
+        row-gap: 24px;   
+      }
+
+      li {
+        a {
+          font-size: 18px;
+          line-height: 156%;
+          color: var(--brown20);
+
+          text-decoration-color: transparent !important;
+          text-decoration: underline;
+          text-underline-offset: 4px;
+          text-decoration-thickness: 1px;
+          transition: color .2s linear, text-decoration-color .2s linear;
+          @media(max-width: 1500px){
+            font-size: 16px;
+          }
+          @media(max-width: 991px){
+            font-size: 18px;
+          }
+
+          &:hover {
+            text-decoration-color: var(--brown20) !important;
+          }
+        }
+      }
+    }
+  }
+
+  &B {
+    background: var(--black);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .col {
+      max-width: 350px;
+      flex: none;
+      @media(max-width: 1199px){
+        max-width: 250px;
+      }
+      @media(max-width: 991px){
+        max-width: 100%;
+      }
+
+      a {
+        color: var(--brown50);
+        display: block;
+        width: fit-content;
+        text-decoration-color: transparent !important;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1px;
+        transition: color .2s linear, text-decoration-color .2s linear;
+
+        &:hover {
+          text-decoration-color: var(--brown50) !important;
+        }
+      }
+    }
+  }
+
+  a.develop {
+    display: flex;
+    column-gap: 8px;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--brown50);
+  }
+
+  .copyright {
+    color: var(--brown50);
+  }
+}

@@ -1,0 +1,143 @@
+.scheme {
+  &W {
+    border-radius: 48px;
+    padding: 48px;
+    background-color: #fff;
+
+    @media(max-width: 991px) {
+      padding: 32px;
+      border-radius: 40px;
+    }
+  }
+
+  &Image {
+    border: 1px solid var(--brown20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 48px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media(max-width: 991px){
+      border: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &:hover {
+      opacity: .85;
+    }
+
+    img {
+      height: 470px;
+      object-fit: contain;
+      @media(max-width: 575px){
+        height: 80vw;
+      }
+    }
+  }
+
+  .contactsArrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    img {
+      @media(max-width: 575px) {
+        width: 50px;
+      }
+    }
+  }
+
+  &Text {
+    font-size: 18px;
+    line-height: 156%;
+    margin-top: 70px;
+    padding-right: 24px;
+    padding-left: 24px;
+    @media(max-width: 991px){
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 14px;
+      margin-top: 24px;
+    }
+
+    ul {
+      li {
+        margin-bottom: 12px;
+        color: var(--brown80);
+        display: flex;
+        column-gap: 8px;
+
+        a {
+          &:hover {
+            color: var(--orange);
+          }
+        }
+
+        &::before {
+          content: '–';
+        }
+      }
+    }
+  }
+}
+
+.schemeTabs {
+  .tabs__nav {
+    margin-bottom: 40px;
+    @media(max-width: 991px){
+      margin-bottom: 24px;
+    }
+    @media(max-width: 440px){
+      flex-direction: column;
+      width: 100%;
+    }
+    &-btn {
+      @media(max-width: 440px){
+        width: 100%;
+      }
+    }
+  }
+}
+
+.schemeLink {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.03em;
+  color: var(--white);
+
+  @media(max-width: 1400px) {
+    font-size: 30px;
+    line-height: 140%;
+  }
+
+  @media(max-width: 1199px) {
+    font-size: 22px;
+  }
+
+  @media(max-width: 991px) {
+    font-size: 20px;
+  }
+
+  @media(max-width: 575px) {
+    max-width: calc(100% - 30px);
+
+  }
+}
+
+.schemeLinkWrap {
+  transition: background-color .2s linear;
+  padding: 36px 48px;
+
+  @media(max-width: 575px) {
+    padding: 26px 32px;
+    border-radius: 32px;
+  }
+
+  &:hover {
+    background-color: var(--orange);
+  }
+}

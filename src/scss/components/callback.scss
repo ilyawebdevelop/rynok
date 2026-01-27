@@ -1,0 +1,35 @@
+.callback {
+  &W {
+    background-color: #fff;
+    border-radius: 48px;
+    @media(max-width: 991px){
+      border-radius: 40px;
+    }
+  }
+
+  .h2 {
+    font-size: 56px;
+    line-height: 129%;
+    @media(max-width: 1199px){
+      font-size: 40px;
+    }
+    @media(max-width: 991px){
+      font-size: 36px;
+    }
+  }
+
+  &Content {
+    padding: 44px 64px;
+    @media(max-width: 991px){
+      padding: 32px;
+    }
+  }
+  &Image {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    @media(max-width: 991px){
+      margin-left: auto;
+    }
+  }
+}

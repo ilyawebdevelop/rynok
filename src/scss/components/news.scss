@@ -1,0 +1,22 @@
+.news {
+  .swiper-wrapper {
+    @media(max-width: 767px){
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+  &Slider {
+    overflow: visible;
+  }
+  &Card {
+    &Title {
+      font-family: var(--second-family);
+      line-height: 133%;
+      opacity: .8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

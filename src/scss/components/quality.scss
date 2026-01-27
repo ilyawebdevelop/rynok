@@ -1,0 +1,101 @@
+.quality {
+  .sectHead {
+    position: relative;
+    z-index: 1;
+  }
+
+  .h2 {
+    font-size: 56px;
+
+    @media(max-width: 1400px) {
+      font-size: 45px;
+    }
+
+    @media(max-width: 1199px) {
+      font-size: 40px;
+    }
+
+    @media(max-width: 991px) {
+      font-size: 36px;
+    }
+  }
+
+  &W {
+    background: var(--brown20);
+    border-radius: 48px;
+    @media(max-width: 991px){
+      border-radius: 40px;
+      overflow: hidden;
+    }
+  }
+
+  &Content {
+    padding: 64px;
+    position: relative;
+
+    @media(max-width: 991px) {
+      padding: 32px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('@img/quality/quality-flow.svg') no-repeat right top / contain;
+      top: 0;
+      right: -50px;
+
+      @media(max-width: 991px) {
+        width: 255px;
+        right: -110px;
+      }
+
+      @media(max-width: 767px) {
+        right: 0;
+        background: url('@img/quality/quality-flow-sm.svg') no-repeat right top / contain;
+      }
+    }
+  }
+
+  &Col {
+    width: 50%;
+
+    @media(max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 370px;
+    border-radius: 48px;
+    position: relative;
+    z-index: 1;
+
+    @media(max-width: 991px) {
+      max-width: 320px;
+      margin-left: auto;
+      border-radius: 40px;
+    }
+
+    @media(max-width: 767px) {
+      max-width: 100%;
+
+    }
+  }
+}
+
+.qualityBtnWrap {
+  .button {
+    @media(max-width: 575px) {
+      font-size: 18px;
+    }
+
+    @media(max-width: 420px) {
+      width: 100%;
+    }
+  }
+}
