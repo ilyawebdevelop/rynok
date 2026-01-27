@@ -16,7 +16,8 @@
   @media(max-width: 1400px) {
     font-size: 16px;
   }
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     font-size: 18px;
   }
 
@@ -94,18 +95,25 @@
       background-color: var(--brown50);
     }
   }
-&.button-sm-100 {
-  @media(max-width: 420px){
-    width: 100%;
+
+  &.button-sm-100 {
+    @media(max-width: 420px) {
+      width: 100%;
+    }
   }
-}
+
   svg {
     width: 16px;
     height: 16px;
     stroke: #000;
   }
 }
-
+.bviBtn,
+.accountBtn {
+  &:hover {
+    opacity: .75;
+  }
+}
 .footerRentBtn {
   padding-left: 30px;
   padding-right: 30px;
@@ -130,8 +138,9 @@
   padding-left: 39px;
   padding-right: 39px;
   font-size: 24px;
-  @media(max-width: 991px){
-    font-weight: 400!important;
+
+  @media(max-width: 991px) {
+    font-weight: 400 !important;
     height: 48px;
     font-size: 18px;
     padding-left: 32px;
