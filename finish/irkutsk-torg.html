@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap&_v=20260128111746"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Иркутск торговый</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="headerW">
+          <a href="#" class="headerLogo logo">
+            <img src="img/admin/logo/logo.svg" alt="logo">
+          </a>
+          <div class="headerWContent">
+            <div class="headerT">
+              <div class="headerTContacts">
+                <div class="headerTPhoneWork d-flex flex-column">
+                  <a class="headerTPhone" href="tel:83952745995">8 (3952) 745-995</a>
+                  <span class="headerTWork">
+                    ежедневно 8:00-20:00
+                  </span>
+                </div>
+                <div class="headerTSocials socials d-none d-lg-block">
+                  <ul>
+                    <li>
+                      <a href="#" target="_blank" rel="nofollow">
+                        <img src="img/admin/socials/vk.svg" alt="icon">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank" rel="nofollow">
+                        <img src="img/admin/socials/ok.svg" alt="icon">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="headerTSearch search d-none d-lg-block">
+                <input class="searchInput" type="search" placeholder="Поиск">
+                <button class="searchBtn">
+                  <img src="img/icons/search.svg" alt="search">
+                </button>
+              </div>
+              <div class="headerTAction">
+                <button class="bviBtn d-none d-lg-block">
+                  <img src="img/icons/bvi.svg" alt="icon">
+                </button>
+                <button class="headerSearchBtn searchMobileAction d-flex d-lg-none">
+                  <img src="img/icons/search-brown80.svg" alt="icon">
+                </button>
+                <a href="#" class="accountBtn">
+                  <img src="img/icons/account.svg" alt="icon">
+                </a>
+                <div class="headerTLangSwither d-none d-lg-flex">
+                  <div class="switchEl">
+                    <input id="switch_1" type="radio" name="langSwitcher" checked>
+                    <label for="switch_1">
+                      Рус
+                    </label>
+                  </div>
+                  <div class="switchEl">
+                    <input id="switch_2" type="radio" name="langSwitcher">
+                    <label for="switch_2">
+                      中国
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="headerBFixed">
+              <a href="#" class="headerFixedLogo logo">
+                <img src="img/admin/logo/footer-logo.svg" alt="logo">
+              </a>
+              <div class="headerB">
+
+                <nav class="headerNav">
+                  <ul>
+                    <li class="has-children">
+                      <a href="#">О рынке</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="#">Иcтория</a>
+                        </li>
+                        <li>
+                          <a href="#">Иркутск торговый</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Покупателям</a>
+                    </li>
+                    <li>
+                      <a href="#">Арендаторам</a>
+                    </li>
+                    <li>
+                      <a href="#">Лавки и Фермеры</a>
+                    </li>
+                    <li>
+                      <a href="#">Новости</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="d-flex gap-3 gap-lg-2">
+                  <button class="button button--brown-50-transparent headerRentBtn" type="button" data-fancybox
+                    data-src="#modalRent">
+                    <img class="d-none d-lg-block" src="img/icons/btn-rent.svg" alt="icon">
+                    <img class="d-block d-lg-none" src="img/icons/btn-rent-white.svg" alt="icon">
+                    <span class="d-none d-xl-block">Стать арендатором</span>
+                  </button>
+                  <button class="button button--orange headerOrderBtn" type="button">
+                    <img src="img/icons/btn-order.svg" alt="icon">
+                    <span class="d-none d-xl-block">Задать вопрос</span>
+                  </button>
+                </div>
+                <div class="hamburger" id="toggle">
+                  <div class="top-bun"></div>
+                  <div class="meat"></div>
+                  <div class="bottom-bun"></div>
+                </div><!-- /Hamburger Menu -->
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="headerNavMobile">
+        <div class="container">
+
+          <div class="headerNavMobileHead">
+            <div class="headerTLangSwither d-flex mt-3">
+              <div class="switchEl">
+                <input id="switch_11" type="radio" name="langSwitcherSm" checked>
+                <label for="switch_11">
+                  Рус
+                </label>
+              </div>
+              <div class="switchEl">
+                <input id="switch_12" type="radio" name="langSwitcherSm">
+                <label for="switch_12">
+                  中国
+                </label>
+              </div>
+            </div>
+            <button class="headerNavMobileClose" type="button">
+              <img src="img/icons/close.svg" alt="icon">
+            </button>
+          </div>
+
+          <div class="headerNavSm">
+            <ul>
+              <li><a href="#">О рынке: Иcтория</a></li>
+              <li><a href="#">О рынке: Иркутск торговый</a></li>
+              <li><a href="#">Покупателям</a></li>
+              <li><a href="#">Арендаторам</a></li>
+              <li><a href="#">Лавки и Фермеры</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+          </div>
+
+          <div class="d-flex flex-column gap-3 mb-4 pb-2">
+            <a href="tel:83952745995" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/icons/phone.svg" alt="icon">
+              </div>
+              <div class="d-flex flex-column">
+                <span class="fw-bold headerNavMobileLinkText">8 (3952) 745-995</span>
+                <span class="color-brown50 text--sm">ежедневно 8:00-20:00</span>
+              </div>
+            </a>
+            <a href="#" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/icons/account.svg" alt="icon">
+              </div>
+              <span class="fw-bold headerNavMobileLinkText">Войти в кабинет</span>
+            </a>
+            <a href="#" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/icons/bvi.svg" alt="icon">
+              </div>
+              <span class="fw-bold headerNavMobileLinkText">Версия для слабовидящих</span>
+            </a>
+            <a href="#" class="headerNavMobileLink searchMobileAction d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/icons/search-brown80.svg" alt="icon">
+              </div>
+              <span class="fw-bold headerNavMobileLinkText">Поиск</span>
+            </a>
+            <a href="#" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/admin/socials/vk.svg" alt="icon">
+              </div>
+              <span class="fw-bold headerNavMobileLinkText">Вконтакте</span>
+            </a>
+            <a href="#" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img style="width: 14px;" src="img/admin/socials/ok.svg" alt="icon">
+              </div>
+              <span class="headerNavMobileLinkText fw-bold">Одноклассники</span>
+            </a>
+          </div>
+
+          <div class="d-flex flex-column gap-2 headerNavMobileBtnW">
+            <button class="button button-sm-100 button--brown-80" type="button" data-fancybox data-src="#modalRent">
+              <img src="img/icons/btn-rent.svg" alt="icon">
+              <span>Стать арендатором</span>
+            </button>
+            <button class="button button-sm-100 button--orange" type="button">
+              <img src="img/icons/btn-order.svg" alt="icon">
+              <span>Задать вопрос</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="headerSearchMobile">
+        <div class="container">
+
+          <div class="headerNavMobileHead mb-4">
+            <div class="fz-36 text-uppercase second-family fw-semibold mt-2">
+              Поиск
+            </div>
+            <button class="headerSearchMobileClose" type="button">
+              <img src="img/icons/close.svg" alt="icon">
+            </button>
+          </div>
+
+          <div class="search mb-4">
+            <input class="searchInput w-100" type="search" placeholder="Поиск">
+            <button class="searchBtn">
+              <img src="img/icons/search.svg" alt="search">
+            </button>
+          </div>
+
+          <div class="searchResult">
+            <ul>
+              <li class="mb-4">
+                <span class="color-brown50 d-block mb-2">21.06.2022 11:21</span>
+                <a class="color-brown50 text--md" href="#">
+                  Овощеводство является одной из основных и наиболее трудоёмких отраслей сельскохозяйственного
+                  производства.
+                </a>
+              </li>
+              <li class="mb-4">
+                <span class="color-brown50 d-block mb-2">25.06.2022 12:21</span>
+                <a class="color-brown50 text--md" href="#">
+                  Овощеводство является одной из основных.
+                </a>
+              </li>
+              <li class="mb-4">
+                <span class="color-brown50 d-block mb-2">21.06.2022 11:21</span>
+                <a class="color-brown50 text--md" href="#">
+                  Овощеводство является одной из основных и наиболее трудоёмких отраслей сельскохозяйственного
+                  производства.
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+    <main class="main">
+      <section class="sect pb-0 oveflow-lg-hidden">
+        <div class="container">
+
+          <div class="pageHead">
+            <h1 class="h1">
+              Иркутск торговый
+            </h1>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-9 col-xl-8">
+              <div class="anchor-content" id="link_1">
+                <div class="content mb-4 pb-1">
+                  <div class="color-orange mb-1 text--md">Иркутск — торговая столица Сибири</div>
+                  <h5>От пушнины до байкальских деликатесов</h5>
+                  <p>
+                    Основанный в 1661 году в сердце необозримых сибирских просторов, Иркутск изначально был обречен
+                    стать
+                    средоточием всей разнообразной торговли края. Его стремительному развитию способствовал и статус
+                    административного центра огромной территории — от воеводства до губернии, раскинувшейся от Енисея до
+                    Тихого океана. Эта уникальная комбинация административной власти и экономической географии сделала
+                    город
+                    ключевым узлом на перекрестке континентов.
+                  </p>
+                </div>
+                <div class="galSliderW galSliderW--absolute-nav-arrow d-flex align-items-center gap-2 mb-5">
+                  <button class="navArrow navArrowPrev d-none d-md-flex">
+                    <img src="img/icons/arrow-prev.svg" alt="arrow">
+                  </button>
+                  <div class="swiper galSlider">
+                    <div class="swiper-wrapper">
+
+                      <a href="img/admin/gal/image-6.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-6.webp" type="image/webp"><img
+                            src="img/admin/gal/image-6.jpg" alt="image">
+                        </picture>
+                      </a>
+                      <a href="img/admin/gal/image-2.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-3.webp" type="image/webp"><img
+                            src="img/admin/gal/image-3.jpg" alt="image">
+                        </picture>
+                      </a>
+
+                    </div>
+                  </div>
+                  <button class="navArrow navArrowNext d-none d-md-flex">
+                    <img src="img/icons/arrow-next.svg" alt="arrow">
+                  </button>
+                </div>
+
+              </div>
+              <div class="anchor-content" id="link_2">
+                <div class="content mb-4 pb-1">
+                  <div class="color-orange mb-1 text--md">Золотой век</div>
+                  <h5>Ярмарки, чай и выход к океану</h5>
+                  <p>
+                    В XVIII веке Иркутск превращается не только в торговый, но и в исследовательский хаб для освоения
+                    Северо-Восточной Азии и Тихоокеанского региона. Русский капитал тек сюда за пушниной, к морским
+                    промыслам
+                    и, главное, за торговлей с Китаем.
+                  </p>
+                  <p>
+                    Особый импульс развитию дало учреждение в 1768 году Иркутской ярмарки, быстро ставшей ведущей для
+                    всей
+                    Восточной Сибири. Ее обороты были колоссальны: к концу XVIII века товарооборот достигал 3,7 млн
+                    рублей,
+                    что составляло почти 6% от общероссийского ярмарочного оборота.
+                  </p>
+                  <p>
+                    Ассортимент поражал воображение: из Москвы и Архангельска везли ткани и предметы роскоши, с
+                    Макарьевской и
+                    Ирбитской ярмарок — массовые товары, а из Китая — чай, шелк и фарфор. Интересно, что для широких
+                    слоев
+                    горожан привозили в основном товары массового потребления: мед, хмель, сахар, различные сорта чая, а
+                    также
+                    европейские сладости и вина.
+                  </p>
+                </div>
+                <div class="galSliderW galSliderW--absolute-nav-arrow d-flex align-items-center gap-2 mb-5">
+                  <button class="navArrow navArrowPrev d-none d-md-flex">
+                    <img src="img/icons/arrow-prev.svg" alt="arrow">
+                  </button>
+                  <div class="swiper galSlider">
+                    <div class="swiper-wrapper">
+
+                      <a href="img/admin/gal/image-7.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-7.webp" type="image/webp"><img
+                            src="img/admin/gal/image-7.jpg" alt="image">
+                        </picture>
+                      </a>
+                      <a href="img/admin/gal/image-2.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-3.webp" type="image/webp"><img
+                            src="img/admin/gal/image-3.jpg" alt="image">
+                        </picture>
+                      </a>
+
+                    </div>
+                  </div>
+                  <button class="navArrow navArrowNext d-none d-md-flex">
+                    <img src="img/icons/arrow-next.svg" alt="arrow">
+                  </button>
+                </div>
+                <div class="content mb-4 pb-1">
+
+                  <h5>От ярмарок к стационарной империи</h5>
+                  <p>
+                    Однако ярмарочная торговь, где основные сделки заключались между крупными иногородними и местными
+                    купцами,
+                    имела временный характер. Ее необходимым дополнением стала стационарная лавочная торговля,
+                    обеспечивавшая
+                    постоянные нужды горожан.
+                  </p>
+                  <p>
+                    К началу XIX века иркутское купечество окрепло настолько, что начало самостоятельно организовывать
+                    поставки. Уже в 1830 году объем товаров, доставленных иркутскими купцами в Россию (в основном
+                    китайский
+                    чай в обмен на русские мануфактуры), достиг 6 млн рублей, что почти в восемь раз превосходило оборот
+                    Иркутской ярмарки. Вся эта масса товаров растекалась по растущей сети лавок.
+                  </p>
+                  <p>
+                    К концу XVIII века в городе насчитывалось более 400 торговых мест. Торговая жизнь кипела
+                    повсеместно: на
+                    хлебном, сенном и толкучем рынках, в мясном и рыбном рядах. Многие купцы и мещане держали лавки
+                    прямо при
+                    своих домах, создавая живую, густонаселенную торговую ткань города. Именно из этой стихии и вырос
+                    будущий
+                    Центральный рынок.
+                  </p>
+
+                </div>
+                <div class="galSliderW galSliderW--absolute-nav-arrow d-flex align-items-center gap-2 mb-5">
+                  <button class="navArrow navArrowPrev d-none d-md-flex">
+                    <img src="img/icons/arrow-prev.svg" alt="arrow">
+                  </button>
+                  <div class="swiper galSlider">
+                    <div class="swiper-wrapper">
+
+                      <a href="img/admin/gal/image-8.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-8.webp" type="image/webp"><img
+                            src="img/admin/gal/image-8.jpg" alt="image">
+                        </picture>
+                      </a>
+                      <a href="img/admin/gal/image-2.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-3.webp" type="image/webp"><img
+                            src="img/admin/gal/image-3.jpg" alt="image">
+                        </picture>
+                      </a>
+
+                    </div>
+                  </div>
+                  <button class="navArrow navArrowNext d-none d-md-flex">
+                    <img src="img/icons/arrow-next.svg" alt="arrow">
+                  </button>
+                </div>
+                <div class="content mb-4 pb-1">
+                  <h5>Купечество как культурная сила</h5>
+                  <p>
+                    Иркутское купечество с конца XVIII века стало не только экономической, но и ведущей общественной
+                    силой. Из
+                    его среды вышли меценаты, общественные лидеры, а также творческие личности — врачи, художники,
+                    ученые и
+                    путешественники. Сформировался уникальный класс «благородной буржуазии», активно жертвовавший на
+                    просвещение и культуру и лично участвовавший в научной и культурной жизни, что наложило неизгладимый
+                    отпечаток на облик Иркутска.
+                  </p>
+                </div>
+                <div class="galSliderW galSliderW--absolute-nav-arrow d-flex align-items-center gap-2 mb-5">
+                  <button class="navArrow navArrowPrev d-none d-md-flex">
+                    <img src="img/icons/arrow-prev.svg" alt="arrow">
+                  </button>
+                  <div class="swiper galSlider">
+                    <div class="swiper-wrapper">
+
+                      <a href="img/admin/gal/image-9.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-9.webp" type="image/webp"><img
+                            src="img/admin/gal/image-9.jpg" alt="image">
+                        </picture>
+                      </a>
+                      <a href="img/admin/gal/image-2.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-3.webp" type="image/webp"><img
+                            src="img/admin/gal/image-3.jpg" alt="image">
+                        </picture>
+                      </a>
+
+                    </div>
+                  </div>
+                  <button class="navArrow navArrowNext d-none d-md-flex">
+                    <img src="img/icons/arrow-next.svg" alt="arrow">
+                  </button>
+                </div>
+              </div>
+              <div class="anchor-content" id="link_3">
+                <div class="content mb-4 pb-1">
+                  <div class="color-orange mb-1 text--md">Байкал</div>
+                  <h5>«Рыбный» и «промысловый» цех</h5>
+                  <p>
+                    Рыбный промысел:<br>Омуль, сиг, хариус и осетр солили, коптили и вялили прямо на берегу, а затем
+                    целыми
+                    обозами доставляли в городские рыбные ряды.
+                  </p>
+                  <p>
+                    Звериный промысел:<br> На берегах Байкала добывали «мягкую валюту» — шкурки баргузинского соболя, а
+                    также
+                    медведя и изюбря.
+                  </p>
+                  <p>
+                    Сбор дикоросов:<br> Таежные богатства — кедровый орех, брусника, голубика, черемша — всегда были
+                    важной
+                    частью
+                    местного товарооборота.
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="anchor-content" id="link_4">
+                <div class="content mb-4 pb-1">
+                  <div class="color-orange mb-1 text--md">Уникальные товары</div>
+                  <h5>Центральный рынок — гастрономический ДНК региона</h5>
+                  <p>
+                    Современный Центральный рынок Иркутска — прямое наследие этой богатейшей истории. Здесь можно найти
+                    уникальные товары, формирующие гастрономическую идентичность региона:
+                  </p>
+                  <p>
+                    Омуль и хариус «с дымком»:Прямой потомок товаров из исторических рыбных рядов.
+                  </p>
+                  <p>
+                    Дикоросы: Кедровые орехи в шишках, папоротник-орляк, таежный мед — живые свидетельства промысловой
+                    торговли.
+                  </p>
+                  <p>
+                    Бурятские позы/Буузы: Современный гастрономический символ, объединяющий традиции разных народов.
+                  </p>
+                  <p>
+                    Чайные смеси и сагаан дали:Наследие Великого чайного пути, дополненное местными травами.
+                  </p>
+
+                </div>
+
+                <div class="galSliderW galSliderW--absolute-nav-arrow d-flex align-items-center gap-2 mb-5">
+                  <button class="navArrow navArrowPrev d-none d-md-flex">
+                    <img src="img/icons/arrow-prev.svg" alt="arrow">
+                  </button>
+                  <div class="swiper galSlider">
+                    <div class="swiper-wrapper">
+
+                      <a href="img/admin/gal/image-10.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-10.webp" type="image/webp"><img
+                            src="img/admin/gal/image-10.jpg" alt="image">
+                        </picture>
+                      </a>
+                      <a href="img/admin/gal/image-2.jpg" data-fancybox="gal_1" class="swiper-slide galSlide">
+                        <picture>
+                          <source srcset="img/admin/gal/image-3.webp" type="image/webp"><img
+                            src="img/admin/gal/image-3.jpg" alt="image">
+                        </picture>
+                      </a>
+
+                    </div>
+                  </div>
+                  <button class="navArrow navArrowNext d-none d-md-flex">
+                    <img src="img/icons/arrow-next.svg" alt="arrow">
+                  </button>
+                </div>
+                <div class="content mb-4 pb-1">
+                  <blockquote class="mt-5">
+                    История торговли в Иркутске — это история трансформации города из ярмарочной площади и сети лавок в
+                    мощный
+                    диверсифицированный торговый центр, влиявший на экономику всей России. От 3,7 млн рублей ярмарочного
+                    оборота в XVIII веке до самостоятельных многомиллионных поставок купцов в XIX веке — таков масштаб
+                    иркутской коммерции. Современный Центральный рынок, со своим омулем, кедровым орехом и чаем,
+                    является
+                    живым музеем и прямым продолжателем этой славной торговой традиции, корни которой уходят в самую
+                    основу
+                    города-крепости на пути к Тихому океану.
+                  </blockquote>
+                </div>
+
+
+
+              </div>
+            </div>
+            <div class="col-xl-1 d-none d-xl-block"></div>
+            <div class="col-lg-3 d-none d-lg-block">
+              <div class="sidebar">
+                <ul>
+                  <li><a href="#link_1" rel='m_PageScroll2id'>Иркутск — торговая столица Сибири</a></li>
+                  <li><a href="#link_2" rel='m_PageScroll2id'>Золотой век</a></li>
+                  <li><a href="#link_3" rel='m_PageScroll2id'>Байкал</a></li>
+                  <li><a href="#link_4" rel='m_PageScroll2id'>Уникальные товары</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="callback sect pt-0">
+        <div class="container">
+          <div class="callbackW">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="callbackContent">
+                  <h2 class="h2 mb-3">
+                    Есть вопрос?
+                  </h2>
+                  <div class="d-flex align-items-start align-items-xl-center gap-4 flex-column flex-xl-row">
+                    <button class="button button--celadon fw-bold callbackBtn">
+                      Напишите нам
+                    </button>
+                    <img src="img/admin/callback/gos-logo.svg" alt="logo" class="callbaclGosLogo">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <picture>
+                  <source srcset="img/admin/callback/image-1.webp" type="image/webp"><img
+                    class="callbackImage d-none d-lg-block" src="img/admin/callback/image-1.png" alt="image">
+                </picture>
+                <picture>
+                  <source srcset="img/admin/callback/image-2.webp" type="image/webp"><img
+                    class="callbackImage d-block d-lg-none" src="img/admin/callback/image-2.png" alt="image">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts sect pt-5 pt-lg-0">
+        <div class="container">
+
+          <div class="sectHead d-flex justify-content-between align-items-end">
+            <h2 class="h2 mb-0">
+              Контакты
+            </h2>
+            <a href="#" class="button button--orange d-none d-md-flex">На страницу контактов</a>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-6 mb-2 mb-md-3 mb-xl-0">
+              <div class="map">
+                <iframe
+                  src="https://yandex.by/map-widget/v1/?indoorLevel=1&ll=104.294871%2C52.282920&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjE1ODU5MRI50KDQvtGB0YHQuNGPLCDQmNGA0LrRg9GC0YHQuiwg0YPQu9C40YbQsCDQp9C10YXQvtCy0LAsIDIyIgoNa5fQQhWuIVFC&z=17.71"
+                  width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="row">
+                <div class="col-md-6 mb-3 mb-md-4">
+                  <div class="rounded-48 p-49 bg-brown-flowers h-100">
+                    <a href="tel:83952745995" class="phone link--lg color-brown80 fw-bold mb-1 d-block">8 (3952)
+                      745-995</a>
+                    <span class="text--md fw-bold color-brown80">Ежедневно 8:00-20:00</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-4">
+                  <div class="rounded-48 p-49 bg-brown-flowers h-100">
+                    <a href="mailto:office@irkcr.ru"
+                      class="phone link--lg color-brown80 fw-bold mb-1 d-block">office@irkcr.ru</a>
+                    <span class="text--md fw-bold color-brown80">Электронная почта</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-4">
+                  <div class="rounded-48 p-49 bg-brown-flowers h-100">
+                    <span class="text--lg fw-bold color-brown80 d-block mb-1">г. Иркутск</span>
+                    <span class="text--md fw-bold color-brown80">ул. Чехова , д.22</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-4">
+                  <a href="#"
+                    class="rounded-48 p-49 bg-brown-flower-dark position-relative d-flex flex-column contactsOrderWrap h-100">
+                    <span class="text--lg fw-bold color-white d-block mb-1">Задать вопрос</span>
+                    <span class="text--md fw-bold color-white">Мы вам перезвоним</span>
+                    <button class="contactsArrow">
+                      <img src="img/icons/cont-arrow-white.svg" alt="icon">
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-block d-md-none">
+              <a href="#" class="button button--orange button-sm-100">На страницу контактов</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footerT">
+        <div class="container">
+          <div class="footerTW">
+            <a href="#" class="footerLogo">
+              <img src="img/admin/logo/footer-logo.svg" alt="logo">
+            </a>
+            <nav class="footerNav">
+              <ul>
+                <li><a href="#">О рынке</a></li>
+                <li><a href="#">Покупателям</a></li>
+                <li><a href="#">Арендаторам</a></li>
+                <li><a href="#">Лавки и Фермеры</a></li>
+                <li><a href="#">Новости</a></li>
+              </ul>
+            </nav>
+            <div class="d-flex gap-2 flex-column flex-xl-row w-sm-100">
+              <button class="button button--brown-80 footerRentBtn" type="button" data-fancybox data-src="#modalRent">
+                <img src="img/icons/btn-rent.svg" alt="icon">
+                Стать арендатором
+              </button>
+              <button class="button button--orange footerOrderBtn" type="button">
+                <img src="img/icons/btn-order.svg" alt="icon">
+                Задать вопрос
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footerB">
+        <div class="container">
+          <div class="d-flex justify-content-between flex-wrap flex-column flex-lg-row gap-3 gap-lg-0">
+            <div class="col">
+              <div class="copyright">
+                2025 © Центральный рынок
+              </div>
+            </div>
+            <div class="col d-flex flex-column gap-2">
+              <a href="#">Соглашение на обработку персональных данных</a>
+              <a href="#">Пользовательское соглашение</a>
+            </div>
+            <div class="col d-flex flex-column gap-2">
+              <a href="#">Реквизиты организации</a>
+              <a href="#">Документы</a>
+            </div>
+            <div class="col">
+              <a href="#" class="develop">
+                <img src="img/icons/develop.svg" alt="develop">
+                Разработка сайта – Вангер.рф
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!-- modal -->
+    <!-- rent -->
+    <div class="modal" id="modalRent">
+
+      <div class="modalHead">
+        <div class="sectHead">
+          <h3 class="h3">Стать арендатором</h3>
+        </div>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="modalForm">
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Имя контактного лица</div>
+            <input type="text" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Телефон</div>
+            <input type="tel" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">E-mail</div>
+            <input type="email" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Комментарий</div>
+            <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+          </div>
+
+          <div class="formBtnW mt-4">
+            <button class="button button--brown-20 formBtn" data-fancybox-close>
+              Отменить
+            </button>
+            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+              Отправить
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- good -->
+    <div class="modal" id="modalGood">
+
+      <div class="modalHead">
+        <div class="sectHead">
+          <h3 class="h3">Похвалить<br class="d-none d-lg-block"> работу рынка</h3>
+        </div>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="modalForm">
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+            <input type="text" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+            <input type="tel" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Текст благодарности</div>
+            <textarea class="formText" name="modalGoodComment" id="modalGoodComment"></textarea>
+          </div>
+
+          <div class="formBtnW mt-4">
+            <button class="button button--brown-20 formBtn" data-fancybox-close>
+              Отменить
+            </button>
+            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanksReviews">
+              Отправить
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- bad -->
+    <div class="modal" id="modalBad">
+
+      <div class="modalHead">
+        <div class="sectHead">
+          <h3 class="h3">Пожаловаться на&nbsp;работу рынка</h3>
+        </div>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="modalForm">
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+            <input type="text" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+            <input type="tel" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Текст жалобы</div>
+            <textarea class="formText" name="modalBadComment" id="modalBadComment"></textarea>
+          </div>
+
+          <div class="formBtnW mt-4">
+            <button class="button button--brown-20 formBtn" data-fancybox-close>
+              Отменить
+            </button>
+            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+              Отправить
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Thanks -->
+    <div class="modal" id="modalThanks">
+
+      <div class="modalHead">
+
+        <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="content text--md">
+          <p>
+            Мы ценим каждую обратную связь.<br> После получения вашей жалобы мы:
+          </p>
+          <ul>
+            <li>
+              Направим заявку в ответственный отдел для детального разбора.
+            </li>
+            <li>
+              Проведём проверку указанных фактов в течение 5 рабочих дней.
+            </li>
+            <li>
+              Свяжемся с вами по указанному телефону, чтобы сообщить о принятых мерах.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thanks Reviews -->
+    <div class="modal" id="modalThanksReviews">
+
+      <div class="modalHead">
+
+        <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="content text--md">
+          <p>
+            Вы можете оставить отзыв на других площадках:
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4 mt-lg-5">
+            <a class="reviews-thanks-logo" href="#" target="_blank">
+              <img src="img/admin/reviews/image-1.svg" alt="image">
+            </a>
+            <a class="reviews-thanks-logo" href="#" target="_blank">
+              <img src="img/admin/reviews/image-2.svg" alt="image">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- rent -->
+    <div class="modal" id="modalRentPage">
+
+      <div class="modalHead">
+
+        <h3 class="h3 mb-2">Стать арендатором</h3>
+
+        <div class="modalDescr text--md mb-3">
+          Отправьте заявку и мы рассчитаем стоимость торгового места.
+        </div>
+
+        <div class="h5 text-normal mb-2">
+          Место №123
+        </div>
+        <div class="d-flex gap-2 mb-4 mb-lg-5">
+          <span>Категория продукции</span>
+          <span class="color-orange">20 кв. м.</span>
+        </div>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="modalForm">
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+            <input type="text" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+            <input type="tel" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Комментарий</div>
+            <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+          </div>
+          <div class="agreement">
+            <input type="checkbox" id="agreement-rent" checked>
+            <label for="agreement-rent">
+              <div class="rect"></div>
+              <div class="agreementText">
+                Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки
+                  персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
+              </div>
+            </label>
+          </div>
+
+          <div class="formBtnW mt-4">
+            <button class="button button--brown-20 formBtn" data-fancybox-close>
+              Отменить
+            </button>
+            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+              Отправить
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
+  <script src="js/app.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

@@ -2,6 +2,15 @@ Fancybox.bind("[data-fancybox]", {
   closeButton: false,
 });
 
+(function ($) {
+  $(window).on("load", function () {
+    $("a[rel='m_PageScroll2id']").mPageScroll2id({
+      offset: 150,
+      scrollSpeed: 50,
+    });
+  });
+})(jQuery);
+
 const mediaQueryMin768 = window.matchMedia('(min-width: 768px)');
 
 if (mediaQueryMin768.matches) {
@@ -100,6 +109,52 @@ var mySwiperIntro = new Swiper(introSlider, {
   },
 });
 
+// Инициализация слайдера galSlider
+document.querySelectorAll('.galSlider').forEach(n => {
+  const galSlider = new Swiper(n, {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    speed: 600,
+    navigation: {
+      prevEl: n.closest('.galSliderW').querySelector('.navArrowPrev'),
+      nextEl: n.closest('.galSliderW').querySelector('.navArrowNext'),
+    },
+    breakpoints: {
+      0: {
+        spaceBetween: 18,
+      },
+      576: {
+        spaceBetween: 24,
+      },
+    },
+  });
+});
+
+// Инициализация слайдера gal-three-slider
+document.querySelectorAll('.gal-three-slider').forEach(n => {
+  const galThreeSlider = new Swiper(n, {
+    slidesPerView: 3,
+    spaceBetween: 19,
+    speed: 600,
+    navigation: {
+      prevEl: n.closest('.gal-three-slider-wrapper').querySelector('.navArrowPrev'),
+      nextEl: n.closest('.gal-three-slider-wrapper').querySelector('.navArrowNext'),
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  });
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.headerBFixed');
   // const mainEl = document.querySelector('.main');
@@ -167,4 +222,9 @@ btnClose?.addEventListener('click', function (e) {
 
 searchClose?.addEventListener('click', function (e) {
   searchMenu.classList.remove('active');
+});
+
+$('.freeshopFilterAction').click(function () {
+  $(this).toggleClass('active');
+  $(this).parent('.freeshop-filter-action-sm').siblings('.freeshop-filter').slideToggle();
 });

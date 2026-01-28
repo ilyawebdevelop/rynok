@@ -115,6 +115,7 @@ section {
     padding-left: 23px;
     padding-right: 23px;
   }
+
   &--md {
     height: 80px;
     font-size: 16px;
@@ -156,6 +157,7 @@ section {
     padding-left: 24px;
     padding-right: 24px;
   }
+
   &--md {
     height: 40px;
     font-size: 16px;
@@ -302,8 +304,13 @@ h1,
   line-height: 120%;
   text-transform: uppercase;
 
+  @media(max-width: 1500px) {
+    font-size: 60px;
+  }
+
   @media(max-width: 991px) {
-    font-size: 24px;
+    font-size: 36px;
+    line-height: 48px;
   }
 }
 
@@ -361,8 +368,9 @@ h4,
 .h4 {
   font-size: 36px;
   line-height: 133%;
+
   &.h4-sm-h5 {
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       font-size: 24px;
       line-height: 133%;
     }
@@ -398,6 +406,11 @@ h5 {
   &.text--md {
     font-size: 18px;
     line-height: 156%;
+  }
+  &.text--md-sm-16 {
+    @media(max-width: 991px){
+      font-size: 16px;
+    }
   }
 
   &>p {
@@ -562,11 +575,13 @@ h5 {
     }
   }
 }
+
 .fw-sm-bold {
-  @media(max-width: 575px){
-    font-weight: bold!important;
+  @media(max-width: 575px) {
+    font-weight: bold !important;
   }
 }
+
 .link--lg {
   font-size: 24px;
   line-height: 167%;
@@ -574,6 +589,14 @@ h5 {
 
   @media(max-width: 1400px) {
     font-size: 20px;
+  }
+}
+
+a.text-opacity-80 {
+  opacity: .8;
+
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -612,6 +635,7 @@ a.color-brown80.underline {
 .color-orange {
   color: var(--orange);
 }
+
 a.color-orange {
   &:hover {
     color: var(--brown80);
@@ -918,21 +942,31 @@ a.color-orange {
     }
   }
 }
+
 .text-uppercase-sm-unset {
-  @media(max-width: 991px){
-    text-transform: unset!important;
+  @media(max-width: 991px) {
+    text-transform: unset !important;
   }
 }
+.text-decoration-underline-lg {
+  @media(max-width: 991px){
+    text-decoration: underline!important;
+  }
+}
+
 .rentForm {
   background-color: #fee5a9;
   padding: 48px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     padding: 32px;
   }
+
   .button {
     width: 240px;
   }
 }
+
 .rent-phone-wrap {
   display: flex;
   flex-direction: column;
@@ -940,10 +974,12 @@ a.color-orange {
   justify-content: center;
   height: 100%;
   background: url('@img/bg/rent-phone-bg.jpg') no-repeat center center / cover;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     min-height: 300px;
   }
 }
-.rent-phone-icon{
+
+.rent-phone-icon {
   width: 80px;
 }
