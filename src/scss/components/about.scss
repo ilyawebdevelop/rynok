@@ -26,6 +26,7 @@
   }
 
   &Gal {
+
     &Slide {
       transition: opacity .2s linear;
 
@@ -42,11 +43,26 @@
         @media(max-width: 1199px) {
           height: 430px;
         }
-        @media(max-width: 991px){
+
+        @media(max-width: 991px) {
           border-radius: 40px;
         }
-        @media(max-width: 575px){
+
+        @media(max-width: 575px) {
           height: 85vw;
+        }
+      }
+    }
+
+    &Slider {
+      &--sm {
+        .aboutGalSlide {
+          img {
+            height: 360px;
+            @media(max-width: 575px){
+              height: 65vw;
+            }
+          }
         }
       }
     }

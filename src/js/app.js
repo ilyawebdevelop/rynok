@@ -134,12 +134,12 @@ document.querySelectorAll('.galSlider').forEach(n => {
       nextEl: n.closest('.galSliderW').querySelector('.navArrowNext'),
     },
     breakpoints: {
-      0: {  
+      0: {
         spaceBetween: 18,
       },
-      576: {   
+      576: {
         spaceBetween: 24,
-      },  
+      },
     },
   });
 });
@@ -236,4 +236,9 @@ btnClose?.addEventListener('click', function (e) {
 
 searchClose?.addEventListener('click', function (e) {
   searchMenu.classList.remove('active');
+});
+
+$('.freeshopFilterAction').click(function () {
+  $(this).toggleClass('active');
+  $(this).parent('.freeshop-filter-action-sm').siblings('.freeshop-filter').slideToggle();
 });

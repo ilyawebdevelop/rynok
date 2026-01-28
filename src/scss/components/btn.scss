@@ -91,8 +91,16 @@
     border: 1px solid var(--brown50);
     color: var(--brown20);
 
+    .color-brown50 {
+      transition: color .2s linear;
+    }
+
     &:hover {
       background-color: var(--brown50);
+
+      .color-brown50 {
+        color: #fff;
+      }
     }
   }
 
@@ -108,12 +116,14 @@
     stroke: #000;
   }
 }
+
 .bviBtn,
 .accountBtn {
   &:hover {
     opacity: .75;
   }
 }
+
 .footerRentBtn {
   padding-left: 30px;
   padding-right: 30px;
@@ -189,5 +199,52 @@
     justify-content: center;
     border-radius: 50%;
     border: 1px solid var(--brown50);
+  }
+}
+
+.freeshop-reset-btn {
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 16px;
+  height: 40px;
+  @media(max-width: 1199px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &:hover {
+    svg {
+      fill: #fff;
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: transparent;
+    fill: var(--brown50);
+  }
+}
+.loadmore{
+  padding-left: 42px;
+  padding-right: 42px;
+  height: 48px;
+  margin-top: 20px;
+  @media(max-width: 767px){
+    margin-top: 10px;
+  }
+}
+.freeshopFilterAction{
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  font-size: 18px;
+  line-height: 155%;
+}
+.freeshopFilterAction {
+  &.active {
+    img {
+      transform: rotate(180deg);
+    }
   }
 }

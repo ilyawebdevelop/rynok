@@ -115,6 +115,25 @@ section {
     padding-left: 23px;
     padding-right: 23px;
   }
+  &--md {
+    height: 80px;
+    font-size: 16px;
+  }
+}
+
+.formSelect {
+  width: 100%;
+  height: 56px;
+  border-radius: 28px;
+  border: 1px solid var(--brown50);
+  padding-left: 25px;
+  font-size: 20px;
+  padding-right: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: #fff url('@img/icons/select-arrow.svg') no-repeat right 20px center / 24px;
 }
 
 .formInput {
@@ -129,12 +148,17 @@ section {
 
   @media(max-width: 991px) {
     height: 40px;
+    font-size: 16px;
   }
 
   &:focus {
     border: 2px solid var(--orange);
     padding-left: 24px;
     padding-right: 24px;
+  }
+  &--md {
+    height: 40px;
+    font-size: 16px;
   }
 }
 
@@ -289,9 +313,32 @@ h2,
   line-height: 125%;
   text-transform: uppercase;
 
+  @media(max-width: 1500px) {
+    font-size: 50px;
+  }
+
   @media(max-width: 991px) {
     font-size: 36px;
     line-height: 133%;
+  }
+
+  &--sm {
+    font-size: 36px;
+    line-height: 133%;
+  }
+
+  &--md {
+    font-size: 56px;
+    line-height: 129%;
+
+    @media(max-width: 1500px) {
+      font-size: 50px;
+    }
+
+    @media(max-width: 991px) {
+      font-size: 36px;
+      line-height: 133%;
+    }
   }
 }
 
@@ -300,10 +347,26 @@ h3,
   font-size: 24px;
   line-height: 133%;
   letter-spacing: 0.02em;
+
+  &.text-normal {
+    text-transform: unset;
+  }
 }
 
 .underline {
   text-decoration: underline;
+}
+
+h4,
+.h4 {
+  font-size: 36px;
+  line-height: 133%;
+  &.h4-sm-h5 {
+    @media(max-width: 991px){
+      font-size: 24px;
+      line-height: 133%;
+    }
+  }
 }
 
 h5 {
@@ -499,7 +562,11 @@ h5 {
     }
   }
 }
-
+.fw-sm-bold {
+  @media(max-width: 575px){
+    font-weight: bold!important;
+  }
+}
 .link--lg {
   font-size: 24px;
   line-height: 167%;
@@ -544,6 +611,11 @@ a.color-brown80.underline {
 
 .color-orange {
   color: var(--orange);
+}
+a.color-orange {
+  &:hover {
+    color: var(--brown80);
+  }
 }
 
 .navArrow {
@@ -806,4 +878,72 @@ a.color-brown80.underline {
   @media(max-width: 991px) {
     overflow: hidden;
   }
+}
+
+.agreement {
+  input {
+    display: none;
+
+    &:checked {
+      &+label {
+        .rect {
+          background: var(--orange) url('@img/icons/check.svg') no-repeat center center / 16px;
+          border-color: var(--orange);
+        }
+      }
+    }
+  }
+
+  label {
+    display: flex;
+    column-gap: 12px;
+    cursor: pointer;
+
+    a {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      text-underline-offset: 4px;
+
+      &:hover {
+        color: var(--orange);
+      }
+    }
+
+    .rect {
+      border-radius: 8px;
+      border: 1px solid var(--brown50);
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+  }
+}
+.text-uppercase-sm-unset {
+  @media(max-width: 991px){
+    text-transform: unset!important;
+  }
+}
+.rentForm {
+  background-color: #fee5a9;
+  padding: 48px;
+  @media(max-width: 991px){
+    padding: 32px;
+  }
+  .button {
+    width: 240px;
+  }
+}
+.rent-phone-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: url('@img/bg/rent-phone-bg.jpg') no-repeat center center / cover;
+  @media(max-width: 991px){
+    min-height: 300px;
+  }
+}
+.rent-phone-icon{
+  width: 80px;
 }

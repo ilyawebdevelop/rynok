@@ -1,0 +1,116 @@
+.faq {
+  position: relative;
+  z-index: 1;
+
+  &Wrap {
+    background: var(--white);
+    border-radius: 48px;
+    padding: 48px 48px 60px;
+    @media(max-width: 991px){
+      padding: 32px;
+      border-radius: 40px;
+    }
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border-left: none;
+  border-right: none;
+  border-color: var(--brown80);
+}
+
+.accordion-button {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  color: var(--brown80);
+  padding-top: 10px;
+  padding-bottom: 18px;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: flex-start;
+  column-gap: 10px;
+
+  @media(max-width: 991px) {
+    font-size: 18px;
+    line-height: 156%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  color: unset;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--brown80);
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 30px;
+
+  @media(max-width: 991px) {
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+
+.accordion-item:first-of-type {
+  border-top: none;
+}
+
+.accordion-item:last-of-type>.accordion-collapse,
+.accordion-item:first-of-type {
+  border-radius: 0;
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+  border-radius: 0;
+}
+
+.accordion-item:last-of-type {
+  border-radius: 0;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-button::after {
+  background-image: url('@img/icons/plus.svg');
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  @media(max-width: 991px){
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('@img/icons/minus.svg');
+  background-size: 28px;
+  @media(max-width: 991px){
+    background-size: 25px;
+  }
+}

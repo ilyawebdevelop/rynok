@@ -29,14 +29,28 @@
     color: var(--brown80);
     max-width: 430px;
 
+    &.text-normal {
+      text-transform: unset;
+    }
+
+
     @media(max-width: 991px) {
       font-size: 24px;
       line-height: 100%;
       text-transform: unset;
     }
-    @media(max-width: 575px){
+
+    @media(max-width: 575px) {
       max-width: calc(100% - 20px);
     }
+  }
+
+  .h5 {
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.02em;
+    opacity: 0.8;
+
   }
 
   .is-close-btn {
@@ -62,9 +76,10 @@
     }
   }
 }
+
 .reviews-thanks-logo {
   img {
-    @media(max-width: 575px){
+    @media(max-width: 575px) {
       height: 115px;
       width: 100%;
       background-color: #fff;

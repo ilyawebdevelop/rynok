@@ -721,7 +721,6 @@
   </div>
 </div>
 
-
 <!-- good -->
 <div class="modal" id="modalGood">
 
@@ -842,7 +841,7 @@
   </div>
 </div>
 
-<!-- Thanks -->
+<!-- Thanks Reviews -->
 <div class="modal" id="modalThanksReviews">
 
   <div class="modalHead">
@@ -869,6 +868,69 @@
           <img src="img/admin/reviews/image-2.svg" alt="image">
         </a>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- rent -->
+<div class="modal" id="modalRentPage">
+
+  <div class="modalHead">
+
+    <h3 class="h3 mb-2">Стать арендатором</h3>
+
+    <div class="modalDescr text--md mb-3">
+      Отправьте заявку и мы рассчитаем стоимость торгового места.
+    </div>
+
+    <div class="h5 text-normal mb-2">
+      Место №123
+    </div>
+    <div class="d-flex gap-2 mb-4 mb-lg-5">
+      <span>Категория продукции</span>
+      <span class="color-orange">20 кв. м.</span>
+    </div>
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <div class="modalForm">
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+        <input type="text" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+        <input type="tel" class="formInput">
+      </div>      
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Комментарий</div>
+        <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+      </div>
+      <div class="agreement">
+        <input type="checkbox" id="agreement-rent" checked>
+        <label for="agreement-rent">
+          <div class="rect"></div>
+          <div class="agreementText">
+            Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
+          </div>
+        </label>
+      </div>
+
+      <div class="formBtnW mt-4">
+        <button class="button button--brown-20 formBtn" data-fancybox-close>
+          Отменить
+        </button>
+        <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+          Отправить
+        </button>
+      </div>
+
     </div>
   </div>
 </div>
