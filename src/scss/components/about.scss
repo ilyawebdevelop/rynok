@@ -35,10 +35,14 @@
       }
 
       img {
-        height: 557px;
+        height: 600px;
         width: 100%;
         object-fit: cover;
         border-radius: 48px;
+
+        @media(max-width: 1400px) {
+          height: 550px;
+        }
 
         @media(max-width: 1199px) {
           height: 430px;
@@ -59,7 +63,8 @@
         .aboutGalSlide {
           img {
             height: 360px;
-            @media(max-width: 575px){
+
+            @media(max-width: 575px) {
               height: 65vw;
             }
           }

@@ -23,7 +23,8 @@
   &W {
     background: var(--brown20);
     border-radius: 48px;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       border-radius: 40px;
       overflow: hidden;
     }
@@ -56,6 +57,16 @@
         background: url('@img/quality/quality-flow-sm.svg') no-repeat right top / contain;
       }
     }
+
+    &--right-bg {
+      position: unset;
+
+      &::before {
+        right: 0;
+        top: 0;
+      }
+ 
+    }
   }
 
   &Col {
@@ -84,6 +95,10 @@
     @media(max-width: 767px) {
       max-width: 100%;
 
+    }
+    &--left-center {
+      object-position: left center;
+      max-height: 100%;
     }
   }
 }

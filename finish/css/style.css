@@ -630,6 +630,10 @@ h5 {
           justify-content: center;
 }
 
+.bg--white {
+  background-color: #fff;
+}
+
 .bg--brown20 {
   background-color: var(--brown20);
 }
@@ -690,6 +694,14 @@ h5 {
   font-size: 24px;
   line-height: 167%;
   letter-spacing: 0.03em;
+}
+
+a.text-opacity-80 {
+  opacity: 0.8;
+}
+
+a.text-opacity-80:hover {
+  opacity: 1;
 }
 
 .color-brown50 {
@@ -813,6 +825,10 @@ a.color-orange:hover {
      object-fit: cover;
 }
 
+.galSlide--lg img {
+  height: 720px;
+}
+
 .gal-three-slider-wrapper .navArrow {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -842,6 +858,11 @@ a.color-orange:hover {
 
 .galSliderW--absolute-nav-arrow .galSlide img {
   border-radius: 40px;
+}
+
+.galSliderW--shadow .swiper {
+  -webkit-box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+          box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
 }
 
 .galSliderW--photos {
@@ -1002,6 +1023,17 @@ a.color-orange:hover {
   width: 80px;
 }
 
+.price-row {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid var(--brown80);
+  margin-bottom: 10px;
+}
+
+.price-row span:nth-child(2) {
+  white-space: nowrap;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1072,6 +1104,16 @@ a.color-orange:hover {
   color: #fff;
 }
 
+.button--brown-50 {
+  background: var(--brown50);
+  color: #fff;
+}
+
+.button--brown-50:hover {
+  background-color: var(--brown50);
+  color: #fff;
+}
+
 .button--brown-80 {
   background: var(--brown80);
   color: var(--brown20);
@@ -1108,6 +1150,10 @@ a.color-orange:hover {
 
 .button--brown-50-transparent:hover .color-brown50 {
   color: #fff;
+}
+
+.button.min-w-240 {
+  min-width: 240px;
 }
 
 .button svg {
@@ -1306,6 +1352,10 @@ a.color-orange:hover {
 
 #modalThanks .content ul {
   list-style-type: decimal;
+}
+
+#modalAboutShop .h3 {
+  max-width: 490px;
 }
 
 .tabs__nav {
@@ -1926,6 +1976,15 @@ a.color-orange:hover {
   right: -50px;
 }
 
+.qualityContent--right-bg {
+  position: unset;
+}
+
+.qualityContent--right-bg::before {
+  right: 0;
+  top: 0;
+}
+
 .qualityCol {
   width: 50%;
 }
@@ -1939,6 +1998,12 @@ a.color-orange:hover {
   border-radius: 48px;
   position: relative;
   z-index: 1;
+}
+
+.qualityImage--left-center {
+  -o-object-position: left center;
+     object-position: left center;
+  max-height: 100%;
 }
 
 .catsSlider {
@@ -1961,6 +2026,7 @@ a.color-orange:hover {
   background-color: #fff;
   overflow: hidden;
   border-radius: 48px;
+  height: 100%;
 }
 
 .shopCardImage {
@@ -2152,7 +2218,7 @@ a.color-orange:hover {
 }
 
 .aboutGalSlide img {
-  height: 557px;
+  height: 600px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2176,6 +2242,26 @@ a.color-orange:hover {
 
 .introCard {
   padding: 40px 32px;
+  position: relative;
+  min-height: 165px;
+  cursor: pointer;
+}
+
+.introCard.bg-celadon-flowers .introCard--no-visible {
+  background: url("../img/bg/bg-celadon-flowers.svg") no-repeat center center/cover;
+}
+
+.introCard.bg-orange-flowers .introCard--no-visible {
+  background: url("../img/bg/bg-orange-flowers.svg") no-repeat center center/cover;
+}
+
+.introCard.bg-green-flowers .introCard--no-visible {
+  background: url("../img/bg/bg-green-flowers.svg") no-repeat center center/cover;
+}
+
+.introCard:hover .introCard--no-visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .introCard span {
@@ -2189,6 +2275,34 @@ a.color-orange:hover {
   width: 47px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.introCard--no-visible {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 48px;
+  width: 100%;
+  height: 100%;
+  padding: 13px 40px;
+  font-size: 14px;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  letter-spacing: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s linear, visibility 0.2s linear;
+  -o-transition: opacity 0.2s linear, visibility 0.2s linear;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
 }
 
 .introSlider {
@@ -2383,6 +2497,10 @@ a.color-orange:hover {
   font-size: 16px;
 }
 
+.freeshop-filter-item--lg .formInput {
+  min-width: 400px;
+}
+
 .freeshopItemR {
   width: 100%;
   display: -webkit-box;
@@ -2411,6 +2529,19 @@ a.color-orange:hover {
       flex-shrink: 0;
   -webkit-box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
           box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+}
+
+.farmersGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+.farmersGrid .shopCard {
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
 }
 
 .footerT {
@@ -2546,6 +2677,11 @@ a.color-orange:hover {
 }
 
 @media (max-width: 1500px) {
+  h1,
+  .h1 {
+    font-size: 60px;
+  }
+
   h2,
   .h2 {
     font-size: 50px;
@@ -2554,6 +2690,10 @@ a.color-orange:hover {
   h2--md,
   .h2--md {
     font-size: 50px;
+  }
+
+  .galSlide--lg img {
+    height: 600px;
   }
 
   .introSlideTitle {
@@ -2656,6 +2796,14 @@ a.color-orange:hover {
     font-size: 16px;
   }
 
+  .aboutGalSlide img {
+    height: 550px;
+  }
+
+  .introCard {
+    min-height: 200px;
+  }
+
   .introCard span {
     font-size: 18px;
   }
@@ -2748,6 +2896,11 @@ a.color-orange:hover {
     max-width: 160px;
   }
 
+  .farmersGrid .shopCard {
+    -ms-grid-column-span: 4;
+    grid-column: 4 span;
+  }
+
   .footerTW .button {
     min-width: 230px;
   }
@@ -2798,7 +2951,8 @@ a.color-orange:hover {
 
   h1,
   .h1 {
-    font-size: 24px;
+    font-size: 36px;
+    line-height: 48px;
   }
 
   h2,
@@ -2813,10 +2967,21 @@ a.color-orange:hover {
     line-height: 133%;
   }
 
+  h2--sm-h5,
+  .h2--sm-h5 {
+    font-size: 24px;
+    line-height: 133%;
+    text-transform: unset;
+  }
+
   h4.h4-sm-h5,
   .h4.h4-sm-h5 {
     font-size: 24px;
     line-height: 133%;
+  }
+
+  .content.text--md-sm-16 {
+    font-size: 16px;
   }
 
   .content blockquote {
@@ -2836,6 +3001,10 @@ a.color-orange:hover {
     font-size: 20px;
   }
 
+  .galSlide--lg img {
+    height: 520px;
+  }
+
   .anchor-content {
     margin-bottom: 40px;
   }
@@ -2846,6 +3015,10 @@ a.color-orange:hover {
 
   .text-uppercase-sm-unset {
     text-transform: unset !important;
+  }
+
+  .text-decoration-underline-lg {
+    text-decoration: underline !important;
   }
 
   .rentForm {
@@ -3078,6 +3251,7 @@ a.color-orange:hover {
 
   .introCard {
     padding: 22px 33px;
+    min-height: 180px;
   }
 
   .introSlide {
@@ -3146,6 +3320,18 @@ a.color-orange:hover {
     width: 100%;
   }
 
+  .farmersGrid {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    row-gap: 20px;
+  }
+
+  .farmersGrid .shopCard {
+    -ms-grid-column-span: 6;
+    grid-column: 6 span;
+  }
+
   .footerT {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -3172,6 +3358,21 @@ a.color-orange:hover {
 }
 
 @media (max-width: 767px) {
+  .galSlide--lg img {
+    height: 350px;
+  }
+
+  .galSliderW--shadow .swiper {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .galSliderW--shadow .swiper-slide {
+    -webkit-box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+            box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+    border-radius: 40px;
+  }
+
   .galSliderW--photos {
     background: transparent;
     -webkit-box-shadow: none;
@@ -3219,6 +3420,10 @@ a.color-orange:hover {
     max-width: 100%;
   }
 
+  .introCard {
+    min-height: 150px;
+  }
+
   .introCard span {
     font-size: 20px;
   }
@@ -3264,6 +3469,10 @@ a.color-orange:hover {
     height: 55vw;
   }
 
+  .galSlide--lg img {
+    height: 65vw;
+  }
+
   .gal-three-slider {
     overflow: visible;
     width: 100%;
@@ -3272,6 +3481,11 @@ a.color-orange:hover {
 
   .gal-three-slide img {
     height: 55vw;
+  }
+
+  .priceW {
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .button {
@@ -3366,6 +3580,91 @@ a.color-orange:hover {
 
   .aboutGalSlider--sm .aboutGalSlide img {
     height: 65vw;
+  }
+
+  .freeshop-filter-item--lg .formInput {
+    min-width: unset;
+  }
+
+  .farmersGrid .shopCard {
+    border-radius: 12px;
+  }
+
+  .farmersGrid .shopCardImage {
+    border-radius: 12px;
+  }
+
+  .farmersGrid .shopCardImage img {
+    height: 35vw;
+    border-radius: 12px;
+  }
+
+  .farmersGrid .shopCardContent {
+    padding: 16px 16px 20px;
+  }
+
+  .farmersGrid .shopCardDescr {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .farmersGrid .shopCardTitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--font-family);
+    font-weight: 400 !important;
+  }
+
+  .farmersGrid .shopCardSubtitle ul {
+    row-gap: 4px;
+    -webkit-column-gap: 4px;
+       -moz-column-gap: 4px;
+            column-gap: 4px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .catsSlider-sm-2 {
+    padding-right: 15px;
+    overflow: visible;
+  }
+
+  .catsSlider-sm-2 .shopCard {
+    border-radius: 12px;
+  }
+
+  .catsSlider-sm-2 .shopCardImage {
+    border-radius: 12px;
+  }
+
+  .catsSlider-sm-2 .shopCardImage img {
+    height: 35vw;
+    border-radius: 12px;
+  }
+
+  .catsSlider-sm-2 .shopCardContent {
+    padding: 16px 16px 20px;
+  }
+
+  .catsSlider-sm-2 .shopCardDescr {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .catsSlider-sm-2 .shopCardTitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--font-family);
+    font-weight: 400 !important;
+  }
+
+  .catsSlider-sm-2 .shopCardSubtitle ul {
+    row-gap: 4px;
+    -webkit-column-gap: 4px;
+       -moz-column-gap: 4px;
+            column-gap: 4px;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .footerNav {

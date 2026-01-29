@@ -14606,6 +14606,14 @@ h2--md,
     line-height: 133%;
   }
 }
+@media (max-width: 991px) {
+  h2--sm-h5,
+.h2--sm-h5 {
+    font-size: 24px;
+    line-height: 133%;
+    text-transform: unset;
+  }
+}
 
 h3,
 .h3 {
@@ -14738,6 +14746,10 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.bg--white {
+  background-color: #fff;
 }
 
 .bg--brown20 {
@@ -14969,6 +14981,29 @@ a.color-orange:hover {
     height: 55vw;
   }
 }
+.galSlide--lg img {
+  height: 720px;
+}
+@media (max-width: 1500px) {
+  .galSlide--lg img {
+    height: 600px;
+  }
+}
+@media (max-width: 991px) {
+  .galSlide--lg img {
+    height: 520px;
+  }
+}
+@media (max-width: 767px) {
+  .galSlide--lg img {
+    height: 350px;
+  }
+}
+@media (max-width: 575px) {
+  .galSlide--lg img {
+    height: 65vw;
+  }
+}
 
 .gal-three-slider-wrapper .navArrow {
   flex-shrink: 0;
@@ -14993,6 +15028,20 @@ a.color-orange:hover {
 }
 .galSliderW--absolute-nav-arrow .galSlide img {
   border-radius: 40px;
+}
+.galSliderW--shadow .swiper {
+  box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+}
+@media (max-width: 767px) {
+  .galSliderW--shadow .swiper {
+    box-shadow: none;
+  }
+}
+@media (max-width: 767px) {
+  .galSliderW--shadow .swiper-slide {
+    box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+    border-radius: 40px;
+  }
 }
 .galSliderW--photos {
   box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
@@ -15179,6 +15228,23 @@ a.color-orange:hover {
   width: 80px;
 }
 
+@media (max-width: 575px) {
+  .priceW {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.price-row {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid var(--brown80);
+  margin-bottom: 10px;
+}
+.price-row span:nth-child(2) {
+  white-space: nowrap;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -15242,6 +15308,14 @@ a.color-orange:hover {
   background-color: var(--brown50);
   color: #fff;
 }
+.button--brown-50 {
+  background: var(--brown50);
+  color: #fff;
+}
+.button--brown-50:hover {
+  background-color: var(--brown50);
+  color: #fff;
+}
 .button--brown-80 {
   background: var(--brown80);
   color: var(--brown20);
@@ -15274,6 +15348,9 @@ a.color-orange:hover {
   .button.button-sm-100 {
     width: 100%;
   }
+}
+.button.min-w-240 {
+  min-width: 240px;
 }
 .button svg {
   width: 16px;
@@ -15528,6 +15605,10 @@ a.color-orange:hover {
     background-color: #fff;
     border-radius: 32px;
   }
+}
+
+#modalAboutShop .h3 {
+  max-width: 490px;
 }
 
 .tabs__nav {
@@ -16158,6 +16239,13 @@ a.color-orange:hover {
     background: url("../img/quality/quality-flow-sm.svg") no-repeat right top/contain;
   }
 }
+.qualityContent--right-bg {
+  position: unset;
+}
+.qualityContent--right-bg::before {
+  right: 0;
+  top: 0;
+}
 .qualityCol {
   width: 50%;
 }
@@ -16186,6 +16274,10 @@ a.color-orange:hover {
   .qualityImage {
     max-width: 100%;
   }
+}
+.qualityImage--left-center {
+  object-position: left center;
+  max-height: 100%;
 }
 
 @media (max-width: 575px) {
@@ -16260,6 +16352,7 @@ a.color-orange:hover {
   background-color: #fff;
   overflow: hidden;
   border-radius: 48px;
+  height: 100%;
 }
 @media (max-width: 991px) {
   .shopCard {
@@ -16524,10 +16617,15 @@ a.color-orange:hover {
   opacity: 0.85;
 }
 .aboutGalSlide img {
-  height: 557px;
+  height: 600px;
   width: 100%;
   object-fit: cover;
   border-radius: 48px;
+}
+@media (max-width: 1400px) {
+  .aboutGalSlide img {
+    height: 550px;
+  }
 }
 @media (max-width: 1199px) {
   .aboutGalSlide img {
@@ -16577,6 +16675,7 @@ a.color-orange:hover {
   padding: 40px 32px;
   position: relative;
   min-height: 165px;
+  cursor: pointer;
 }
 .introCard.bg-celadon-flowers .introCard--no-visible {
   background: url("../img/bg/bg-celadon-flowers.svg") no-repeat center center/cover;
@@ -16913,6 +17012,14 @@ a.color-orange:hover {
     width: 100%;
   }
 }
+.freeshop-filter-item--lg .formInput {
+  min-width: 400px;
+}
+@media (max-width: 575px) {
+  .freeshop-filter-item--lg .formInput {
+    min-width: unset;
+  }
+}
 
 .freeshopItemR {
   width: 100%;
@@ -16940,6 +17047,124 @@ a.color-orange:hover {
   object-fit: cover;
   flex-shrink: 0;
   box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+}
+
+.farmersGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+@media (max-width: 991px) {
+  .farmersGrid {
+    column-gap: 15px;
+    row-gap: 20px;
+  }
+}
+.farmersGrid .shopCard {
+  grid-column: 3 span;
+}
+@media (max-width: 1199px) {
+  .farmersGrid .shopCard {
+    grid-column: 4 span;
+  }
+}
+@media (max-width: 991px) {
+  .farmersGrid .shopCard {
+    grid-column: 6 span;
+  }
+}
+@media (max-width: 575px) {
+  .farmersGrid .shopCard {
+    border-radius: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .farmersGrid .shopCardImage {
+    border-radius: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .farmersGrid .shopCardImage img {
+    height: 35vw;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .farmersGrid .shopCardContent {
+    padding: 16px 16px 20px;
+  }
+}
+@media (max-width: 575px) {
+  .farmersGrid .shopCardDescr {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .farmersGrid .shopCardTitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--font-family);
+    font-weight: 400 !important;
+  }
+}
+@media (max-width: 575px) {
+  .farmersGrid .shopCardSubtitle ul {
+    row-gap: 4px;
+    column-gap: 4px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .catsSlider-sm-2 {
+    padding-right: 15px;
+    overflow: visible;
+  }
+}
+@media (max-width: 575px) {
+  .catsSlider-sm-2 .shopCard {
+    border-radius: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .catsSlider-sm-2 .shopCardImage {
+    border-radius: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .catsSlider-sm-2 .shopCardImage img {
+    height: 35vw;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .catsSlider-sm-2 .shopCardContent {
+    padding: 16px 16px 20px;
+  }
+}
+@media (max-width: 575px) {
+  .catsSlider-sm-2 .shopCardDescr {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .catsSlider-sm-2 .shopCardTitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--font-family);
+    font-weight: 400 !important;
+  }
+}
+@media (max-width: 575px) {
+  .catsSlider-sm-2 .shopCardSubtitle ul {
+    row-gap: 4px;
+    column-gap: 4px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .footerT {

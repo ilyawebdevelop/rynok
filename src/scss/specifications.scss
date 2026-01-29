@@ -347,6 +347,13 @@ h2,
       line-height: 133%;
     }
   }
+  &--sm-h5 {
+    @media(max-width: 991px){
+      font-size: 24px;
+      line-height: 133%;
+      text-transform: unset;
+    }
+  }
 }
 
 h3,
@@ -407,8 +414,9 @@ h5 {
     font-size: 18px;
     line-height: 156%;
   }
+
   &.text--md-sm-16 {
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       font-size: 16px;
     }
   }
@@ -496,7 +504,9 @@ h5 {
     justify-content: center;
   }
 }
-
+.bg--white {
+  background-color: #fff;
+}
 .bg--brown20 {
   background-color: var(--brown20);
 }
@@ -737,6 +747,28 @@ a.color-orange {
       height: 55vw;
     }
   }
+
+  &--lg {
+    img {
+      height: 720px;
+
+      @media(max-width: 1500px) {
+        height: 600px;
+      }
+
+      @media(max-width: 991px) {
+        height: 520px;
+      }
+
+      @media(max-width: 767px) {
+        height: 350px;
+      }
+
+      @media(max-width: 575px) {
+        height: 65vw;
+      }
+    }
+  }
 }
 
 .gal-three-slider-wrapper {
@@ -769,6 +801,23 @@ a.color-orange {
 
     .galSlide {
       img {
+        border-radius: 40px;
+      }
+    }
+  }
+
+  &--shadow {
+    .swiper {
+      box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+
+      @media(max-width: 767px) {
+        box-shadow: none;
+      }
+    }
+
+    .swiper-slide {
+      @media(max-width: 767px) {
+        box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
         border-radius: 40px;
       }
     }
@@ -948,9 +997,10 @@ a.color-orange {
     text-transform: unset !important;
   }
 }
+
 .text-decoration-underline-lg {
-  @media(max-width: 991px){
-    text-decoration: underline!important;
+  @media(max-width: 991px) {
+    text-decoration: underline !important;
   }
 }
 
@@ -982,4 +1032,19 @@ a.color-orange {
 
 .rent-phone-icon {
   width: 80px;
+}
+.priceW{
+  @media(max-width: 575px){
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+.price-row{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid var(--brown80);
+  margin-bottom: 10px;
+  span:nth-child(2){
+    white-space: nowrap;
+  }
 }

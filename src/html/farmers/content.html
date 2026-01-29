@@ -1,0 +1,62 @@
+<section class="sect">
+  <div class="container">
+
+    <div class="pageHead">
+      <h1 class="h1">
+        Фермеры и лавки
+      </h1>
+    </div>
+
+    <div class="d-flex gap-3 justify-content-between d-lg-none mb-3 pb-1 freeshop-filter-action-sm">
+      <button class="freeshopFilterAction">
+        Фильтры
+        <img src="@img/icons/arrow-up.svg" alt="arrow">
+      </button>
+      <button class="button button--brown-20 freeshop-reset-btn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#reset"></use>
+        </svg>
+        Сбросить
+      </button>
+    </div>
+
+    <div class="freeshop-filter mb-4 pb-3">
+      <div class="freeshop-filter-item freeshop-filter-item--lg search">
+        <div class="input-name mb-1">Поиск по названию </div>
+        <input type="search" class="formInput">
+      </div>
+      <div class="freeshop-filter-item">
+        <div class="input-name mb-1">Категория продукции </div>
+        <select name="cat_prod" id="cat_prod" class="formSelect">
+          <option value="1">Все категории</option>
+          <option value="2">Конкретная категория</option>
+        </select>
+      </div>
+      <button class="button button--brown-20 freeshop-reset-btn d-none d-lg-flex">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#reset"></use>
+        </svg>
+        Сбросить все
+      </button>
+    </div>
+
+    <div class="farmersGrid">
+
+      @@include('../shop/card-1.html',{})
+      @@include('../shop/card-2.html',{})
+      @@include('../shop/card-3.html',{})
+      @@include('../shop/card-1.html',{})
+      @@include('../shop/card-2.html',{})
+      @@include('../shop/card-3.html',{})
+      @@include('../shop/card-1.html',{})
+      @@include('../shop/card-2.html',{})
+      @@include('../shop/card-3.html',{})
+
+    </div>
+
+    <button class="button loadmore button--brown-50-transparent mx-auto mt-4 mt-lg-5">
+      <span class="color-brown50">Загрузить ещё</span>
+    </button>
+
+  </div>
+</section>

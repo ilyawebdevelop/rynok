@@ -747,7 +747,7 @@
       <div class="inputW">
         <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
         <input type="tel" class="formInput">
-      </div>      
+      </div>
       <div class="inputW">
         <div class="inputName mb-1 mb-lg-2">Комментарий</div>
         <textarea class="formText" name="rentComment" id="rentComment"></textarea>
@@ -757,7 +757,8 @@
         <label for="agreement-rent">
           <div class="rect"></div>
           <div class="agreementText">
-            Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
+            Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки
+              персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
           </div>
         </label>
       </div>
@@ -772,6 +773,83 @@
       </div>
 
     </div>
+  </div>
+</div>
+
+<!-- modalAboutShop -->
+<div class="modal" id="modalAboutShop">
+
+  <div class="sectHead">
+
+    <h3 class="h3 mb-2">Оставить отзыв о&nbsp;&laquo;Название магазина&raquo;</h3>
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <div class="modalForm">
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+        <input type="text" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+        <input type="tel" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Email (не обязательно)</div>
+        <input type="email" class="formInput">
+      </div>
+      <div class="inputW">
+        <div class="inputName mb-1 mb-lg-2">Ваш отзыв</div>
+        <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+      </div>
+      <div class="agreement">
+        <input type="checkbox" id="agreement-rent" checked>
+        <label for="agreement-rent">
+          <div class="rect"></div>
+          <div class="agreementText">
+            Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки
+              персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
+          </div>
+        </label>
+      </div>
+
+      <div class="formBtnW mt-4">
+        <button class="button button--brown-20 formBtn" data-fancybox-close>
+          Отменить
+        </button>
+        <button class="button button--orange formBtn" data-fancybox data-src="#modalAboutThanks">
+          Отправить
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- modalAboutThanks -->
+<div class="modal" id="modalAboutThanks">
+
+  <div class="sectHead">
+
+    <h3 class="h3 mb-2">Спасибо<br> за ваш отзыв!</h3>
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <button class="button button--orange formBtn min-w-240 d-none d-lg-flex" data-fancybox-close>
+      Закрыть
+    </button>
   </div>
 </div>
 	</div>

@@ -63,13 +63,43 @@ document.querySelectorAll('.catsSlider').forEach(n => {
     spaceBetween: 24,
     speed: 600,
     navigation: {
-      prevEl: n.closest('.tabs__panel').querySelector('.navArrowPrev'),
-      nextEl: n.closest('.tabs__panel').querySelector('.navArrowNext'),
+      prevEl: n.querySelector('.navArrowPrev'),
+      nextEl: n.querySelector('.navArrowNext'),
     },
     breakpoints: {
       0: {
         slidesPerView: 1,
         spaceBetween: 16,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      1400: {
+        slidesPerView: 4,
+      },
+    },
+  });
+});
+
+// Инициализация слайдера catsSlider-sm-2
+document.querySelectorAll('.catsSlider-sm-2').forEach(n => {
+  const catsSlider = new Swiper(n, {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    speed: 600,
+    navigation: {
+      prevEl: n.querySelector('.navArrowPrev'),
+      nextEl: n.querySelector('.navArrowNext'),
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 12,
       },
       576: {
         slidesPerView: 2,
