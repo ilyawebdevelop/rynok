@@ -21,6 +21,12 @@
     font-size: 18px;
   }
 
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: #000;
+  }
+
   &--md {
     height: 36px;
     font-size: 18px;
@@ -61,10 +67,20 @@
   &--brown-20 {
     background: var(--brown20);
     color: var(--brown80);
+    svg {
+      stroke: transparent;
+      fill: var(--brown50);
+      width: 24px;
+      height: 24px;
+    }
 
     &:hover {
       background-color: var(--brown50);
       color: #fff;
+
+      svg {
+        fill: var(--white);
+      }
     }
   }
 
@@ -114,20 +130,27 @@
     }
   }
 
+  &.button--575-w-100 {
+    @media(max-width: 575px) {
+      width: 100%;
+    }
+  }
+
   &.button-sm-100 {
     @media(max-width: 420px) {
       width: 100%;
     }
   }
+
+  &.min-w-200 {
+    min-width: 200px;
+  }
+
   &.min-w-240 {
     min-width: 240px;
   }
 
-  svg {
-    width: 16px;
-    height: 16px;
-    stroke: #000;
-  }
+
 }
 
 .bviBtn,

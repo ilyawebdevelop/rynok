@@ -162,6 +162,32 @@ section {
     height: 40px;
     font-size: 16px;
   }
+
+  &--lg-h-56 {
+    @media(max-width: 991px) {
+      height: 56px;
+      font-size: 20px;
+    }
+  }
+
+  &--password {
+    padding-right: 50px;
+    // background: #fff url('@img/icons/eye.svg') no-repeat right 24px center / 24px;
+
+    &:focus {
+      padding-right: 49px;
+      // background: #fff url('@img/icons/eye.svg') no-repeat right 23px center / 24px;
+    }
+  }
+}
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+  &:hover {
+    opacity: .85;
+  }
 }
 
 .sectHead {
@@ -347,8 +373,9 @@ h2,
       line-height: 133%;
     }
   }
+
   &--sm-h5 {
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       font-size: 24px;
       line-height: 133%;
       text-transform: unset;
@@ -504,9 +531,11 @@ h5 {
     justify-content: center;
   }
 }
+
 .bg--white {
   background-color: #fff;
 }
+
 .bg--brown20 {
   background-color: var(--brown20);
 }
@@ -560,6 +589,17 @@ h5 {
     font-size: 16px;
     line-height: 150%;
   }
+
+  &.text--md-lg-18 {
+    @media(max-width: 991px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.fz-20 {
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .fz-36 {
@@ -1033,18 +1073,28 @@ a.color-orange {
 .rent-phone-icon {
   width: 80px;
 }
-.priceW{
-  @media(max-width: 575px){
+
+.priceW {
+  @media(max-width: 575px) {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
-.price-row{
+
+.price-row {
   padding-bottom: 10px;
   padding-top: 10px;
   border-bottom: 1px solid var(--brown80);
   margin-bottom: 10px;
-  span:nth-child(2){
+
+  span:nth-child(2) {
     white-space: nowrap;
   }
+}
+
+.max-w-510 {
+  max-width: 510px;
+}
+.ml-auto {
+  margin-left: auto;
 }
