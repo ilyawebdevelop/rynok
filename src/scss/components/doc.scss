@@ -1,0 +1,22 @@
+.doc {
+  &W {
+    background: var(--white);
+    padding: 48px 48px 60px;
+    border-radius: 48px;
+
+    @media(max-width: 991px) {
+      padding: 32px;
+      border-radius: 40px;
+    }
+  }
+}
+
+.doc-link-download {
+  display: flex;
+  padding-left: 40px;
+  background: url('@img/icons/download.svg') no-repeat left top 7px / 32px;
+  @media(max-width: 991px){
+    padding-left: 32px;
+     background: url('@img/icons/download.svg') no-repeat left top 3px / 24px;
+  }
+}

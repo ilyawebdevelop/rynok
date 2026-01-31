@@ -258,3 +258,14 @@ $('.freeshopFilterAction').click(function () {
   $(this).toggleClass('active');
   $(this).parent('.freeshop-filter-action-sm').siblings('.freeshop-filter').slideToggle();
 });
+
+
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('.formInput--password');
+togglePassword?.addEventListener('click', () => {
+  // Toggle the type attribute using
+  // getAttribure() method
+  const type = password.getAttribute('type') === 'password' ?
+    'text' : 'password';
+  password.setAttribute('type', type);
+});

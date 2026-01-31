@@ -352,6 +352,27 @@ section {
   font-size: 16px;
 }
 
+.formInput--password {
+  padding-right: 50px;
+}
+
+.formInput--password:focus {
+  padding-right: 49px;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 24px;
+}
+
+#togglePassword:hover {
+  opacity: 0.85;
+}
+
 .sectHead {
   margin-bottom: 40px;
 }
@@ -682,6 +703,11 @@ h5 {
   font-size: 18px;
   line-height: 133%;
   letter-spacing: 0.01em;
+}
+
+.fz-20 {
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .fz-36 {
@@ -1034,6 +1060,14 @@ a.color-orange:hover {
   white-space: nowrap;
 }
 
+.max-w-510 {
+  max-width: 510px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1059,6 +1093,12 @@ a.color-orange:hover {
   padding-left: 24px;
   padding-right: 24px;
   cursor: pointer;
+}
+
+.button svg {
+  width: 16px;
+  height: 16px;
+  stroke: #000;
 }
 
 .button--md {
@@ -1099,9 +1139,20 @@ a.color-orange:hover {
   color: var(--brown80);
 }
 
+.button--brown-20 svg {
+  stroke: transparent;
+  fill: var(--brown50);
+  width: 24px;
+  height: 24px;
+}
+
 .button--brown-20:hover {
   background-color: var(--brown50);
   color: #fff;
+}
+
+.button--brown-20:hover svg {
+  fill: var(--white);
 }
 
 .button--brown-50 {
@@ -1152,14 +1203,12 @@ a.color-orange:hover {
   color: #fff;
 }
 
-.button.min-w-240 {
-  min-width: 240px;
+.button.min-w-200 {
+  min-width: 200px;
 }
 
-.button svg {
-  width: 16px;
-  height: 16px;
-  stroke: #000;
+.button.min-w-240 {
+  min-width: 240px;
 }
 
 .bviBtn:hover,
@@ -2544,6 +2593,86 @@ a.color-orange:hover {
   grid-column: 3 span;
 }
 
+.profileNav {
+  border-bottom: 1px solid var(--brown50);
+}
+
+.profileNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.profileNav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  color: var(--brown50);
+  font-size: 18px;
+  line-height: 28px;
+  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.profileNav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--brown80);
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.profileNav ul li a:hover {
+  color: var(--brown80);
+}
+
+.profileNav ul li a:hover:before {
+  opacity: 1;
+}
+
+.profileNav ul li a:hover svg {
+  fill: var(--brown80);
+}
+
+.profileNav ul li a svg {
+  width: 24px;
+  height: 24px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  fill: var(--brown50);
+  stroke: transparent;
+}
+
+.profileNav ul li.active a {
+  color: var(--brown80);
+}
+
+.profileNav ul li.active a::before {
+  opacity: 1;
+}
+
+.profileNav ul li.active a svg {
+  fill: var(--brown80);
+}
+
 .footerT {
   background: var(--brown50);
   padding-top: 32px;
@@ -2901,6 +3030,16 @@ a.color-orange:hover {
     grid-column: 4 span;
   }
 
+  .profileNav ul {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .profileNav ul li a {
+    font-size: 16px;
+  }
+
   .footerTW .button {
     min-width: 230px;
   }
@@ -2931,6 +3070,11 @@ a.color-orange:hover {
   .formInput {
     height: 40px;
     font-size: 16px;
+  }
+
+  .formInput--lg-h-56 {
+    height: 56px;
+    font-size: 20px;
   }
 
   .sectHead {
@@ -2991,6 +3135,10 @@ a.color-orange:hover {
   .text--md {
     font-size: 16px;
     line-height: 150%;
+  }
+
+  .text--md.text--md-lg-18 {
+    font-size: 18px;
   }
 
   .fz-36 {
@@ -3332,6 +3480,22 @@ a.color-orange:hover {
     grid-column: 6 span;
   }
 
+  .profileNav {
+    border-bottom: none;
+  }
+
+  .profileNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .profileNav ul li a {
+    font-size: 18px;
+    border-bottom: 1px solid var(--brown50);
+  }
+
   .footerT {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -3490,6 +3654,10 @@ a.color-orange:hover {
 
   .button {
     font-size: 18px;
+  }
+
+  .button.button--575-w-100 {
+    width: 100%;
   }
 
   .modal {

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Авторизация</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="headerW">
+          <a href="#" class="headerLogo logo">
+            <img src="img/admin/logo/logo.svg" alt="logo">
+          </a>
+          <div class="headerWContent">
+            <div class="headerT">
+              <div class="headerTContacts">
+                <div class="headerTPhoneWork d-flex flex-column">
+                  <a class="headerTPhone" href="tel:83952745995">8 (3952) 745-995</a>
+                  <span class="headerTWork">
+                    ежедневно 8:00-20:00
+                  </span>
+                </div>
+                <div class="headerTSocials socials d-none d-lg-block">
+                  <ul>
+                    <li>
+                      <a href="#" target="_blank" rel="nofollow">
+                        <img src="img/admin/socials/vk.svg" alt="icon">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank" rel="nofollow">
+                        <img src="img/admin/socials/ok.svg" alt="icon">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="headerTSearch search d-none d-lg-block">
+                <input class="searchInput" type="search" placeholder="Поиск">
+                <button class="searchBtn">
+                  <img src="img/icons/search.svg" alt="search">
+                </button>
+              </div>
+              <div class="headerTAction">
+                <button class="bviBtn d-none d-lg-block">
+                  <img src="img/icons/bvi.svg" alt="icon">
+                </button>
+                <button class="headerSearchBtn searchMobileAction d-flex d-lg-none">
+                  <img src="img/icons/search-brown80.svg" alt="icon">
+                </button>
+                <a href="#" class="accountBtn">
+                  <img src="img/icons/account.svg" alt="icon">
+                </a>
+                <div class="headerTLangSwither d-none d-lg-flex">
+                  <div class="switchEl">
+                    <input id="switch_1" type="radio" name="langSwitcher" checked>
+                    <label for="switch_1">
+                      Рус
+                    </label>
+                  </div>
+                  <div class="switchEl">
+                    <input id="switch_2" type="radio" name="langSwitcher">
+                    <label for="switch_2">
+                      中国
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="headerBFixed">
+              <a href="#" class="headerFixedLogo logo">
+                <img src="img/admin/logo/footer-logo.svg" alt="logo">
+              </a>
+              <div class="headerB">
+
+                <nav class="headerNav">
+                  <ul>
+                    <li class="has-children">
+                      <a href="#">О рынке</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="#">Иcтория</a>
+                        </li>
+                        <li>
+                          <a href="#">Иркутск торговый</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Покупателям</a>
+                    </li>
+                    <li>
+                      <a href="#">Арендаторам</a>
+                    </li>
+                    <li>
+                      <a href="#">Лавки и Фермеры</a>
+                    </li>
+                    <li>
+                      <a href="#">Новости</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="d-flex gap-3 gap-lg-2">
+                  <button class="button button--brown-50-transparent headerRentBtn" type="button" data-fancybox
+                    data-src="#modalRent">
+                    <img class="d-none d-lg-block" src="img/icons/btn-rent.svg" alt="icon">
+                    <img class="d-block d-lg-none" src="img/icons/btn-rent-white.svg" alt="icon">
+                    <span class="d-none d-xl-block">Стать арендатором</span>
+                  </button>
+                  <button class="button button--orange headerOrderBtn" type="button">
+                    <img src="img/icons/btn-order.svg" alt="icon">
+                    <span class="d-none d-xl-block">Задать вопрос</span>
+                  </button>
+                </div>
+                <div class="hamburger" id="toggle">
+                  <div class="top-bun"></div>
+                  <div class="meat"></div>
+                  <div class="bottom-bun"></div>
+                </div><!-- /Hamburger Menu -->
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="headerNavMobile">
+        <div class="container">
+
+          <div class="headerNavMobileHead">
+            <div class="headerTLangSwither d-flex mt-3">
+              <div class="switchEl">
+                <input id="switch_11" type="radio" name="langSwitcherSm" checked>
+                <label for="switch_11">
+                  Рус
+                </label>
+              </div>
+              <div class="switchEl">
+                <input id="switch_12" type="radio" name="langSwitcherSm">
+                <label for="switch_12">
+                  中国
+                </label>
+              </div>
+            </div>
+            <button class="headerNavMobileClose" type="button">
+              <img src="img/icons/close.svg" alt="icon">
+            </button>
+          </div>
+
+          <div class="headerNavSm">
+            <ul>
+              <li><a href="#">О рынке: Иcтория</a></li>
+              <li><a href="#">О рынке: Иркутск торговый</a></li>
+              <li><a href="#">Покупателям</a></li>
+              <li><a href="#">Арендаторам</a></li>
+              <li><a href="#">Лавки и Фермеры</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+          </div>
+
+          <div class="d-flex flex-column gap-3 mb-4 pb-2">
+            <a href="tel:83952745995" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/icons/phone.svg" alt="icon">
+              </div>
+              <div class="d-flex flex-column">
+                <span class="fw-bold headerNavMobileLinkText">8 (3952) 745-995</span>
+                <span class="color-brown50 text--sm">ежедневно 8:00-20:00</span>
+              </div>
+            </a>
+            <a href="#" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/icons/account.svg" alt="icon">
+              </div>
+              <span class="fw-bold headerNavMobileLinkText">Войти в кабинет</span>
+            </a>
+            <a href="#" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/icons/bvi.svg" alt="icon">
+              </div>
+              <span class="fw-bold headerNavMobileLinkText">Версия для слабовидящих</span>
+            </a>
+            <a href="#" class="headerNavMobileLink searchMobileAction d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/icons/search-brown80.svg" alt="icon">
+              </div>
+              <span class="fw-bold headerNavMobileLinkText">Поиск</span>
+            </a>
+            <a href="#" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img src="img/admin/socials/vk.svg" alt="icon">
+              </div>
+              <span class="fw-bold headerNavMobileLinkText">Вконтакте</span>
+            </a>
+            <a href="#" class="headerNavMobileLink d-flex align-items-center gap-3">
+              <div class="headerNavMobileLinkIcon">
+                <img style="width: 14px;" src="img/admin/socials/ok.svg" alt="icon">
+              </div>
+              <span class="headerNavMobileLinkText fw-bold">Одноклассники</span>
+            </a>
+          </div>
+
+          <div class="d-flex flex-column gap-2 headerNavMobileBtnW">
+            <button class="button button-sm-100 button--brown-80" type="button" data-fancybox data-src="#modalRent">
+              <img src="img/icons/btn-rent.svg" alt="icon">
+              <span>Стать арендатором</span>
+            </button>
+            <button class="button button-sm-100 button--orange" type="button">
+              <img src="img/icons/btn-order.svg" alt="icon">
+              <span>Задать вопрос</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="headerSearchMobile">
+        <div class="container">
+
+          <div class="headerNavMobileHead mb-4">
+            <div class="fz-36 text-uppercase second-family fw-semibold mt-2">
+              Поиск
+            </div>
+            <button class="headerSearchMobileClose" type="button">
+              <img src="img/icons/close.svg" alt="icon">
+            </button>
+          </div>
+
+          <div class="search mb-4">
+            <input class="searchInput w-100" type="search" placeholder="Поиск">
+            <button class="searchBtn">
+              <img src="img/icons/search.svg" alt="search">
+            </button>
+          </div>
+
+          <div class="searchResult">
+            <ul>
+              <li class="mb-4">
+                <span class="color-brown50 d-block mb-2">21.06.2022 11:21</span>
+                <a class="color-brown50 text--md" href="#">
+                  Овощеводство является одной из основных и наиболее трудоёмких отраслей сельскохозяйственного
+                  производства.
+                </a>
+              </li>
+              <li class="mb-4">
+                <span class="color-brown50 d-block mb-2">25.06.2022 12:21</span>
+                <a class="color-brown50 text--md" href="#">
+                  Овощеводство является одной из основных.
+                </a>
+              </li>
+              <li class="mb-4">
+                <span class="color-brown50 d-block mb-2">21.06.2022 11:21</span>
+                <a class="color-brown50 text--md" href="#">
+                  Овощеводство является одной из основных и наиболее трудоёмких отраслей сельскохозяйственного
+                  производства.
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+    <main class="main">
+      <section class="sect">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-3 d-none d-lg-block"></div>
+            <div class="col-12 col-lg-6">
+              <h1 class="h1 mb-0 text-center">
+                Вход
+              </h1>
+              <div class="text--md text--md-lg-18 text-center mb-4 pb-2">
+                в личный кабинет арендатора
+              </div>
+              <div class="inputW">
+                <div class="input-name mb-2 fz-20 px-4">
+                  Логин
+                </div>
+                <input type="text" class="formInput formInput--lg-h-56">
+              </div>
+              <div class="inputW">
+                <div class="input-name mb-2 fz-20 px-4">
+                  Пароль
+                </div>
+                <div class="position-relative">
+                  <input type="password" class="formInput formInput--password formInput--lg-h-56">
+                  <button id="togglePassword"><img src="img/icons/eye.svg" alt="icon"></button>
+                </div>
+              </div>
+              <a href="#" class="text-end color-orange text--md px-4 mb-4 d-none d-sm-block">
+                Забыли пароль?
+              </a>
+              <div
+                class="d-flex align-items-start align-items-sm-center justify-content-between flex-column flex-sm-row gap-4 gap-sm-0 mt-4 mt-sm-0">
+
+                <div class="d-flex justify-content-between w-100">
+                  <div class="agreement px-0 px-sm-4">
+                    <input type="checkbox" id="authorize-check">
+                    <label for="authorize-check">
+                      <div class="rect"></div>
+                      <div class="agreementText text--md">
+                        Запомнить меня
+                      </div>
+                    </label>
+                  </div>
+                  <a href="#" class="text-end color-orange text--md d-block d-flex d-sm-none">
+                    Забыли пароль?
+                  </a>
+                </div>
+
+                <button class="button button--575-w-100 button--orange min-w-200 mt-2 mt-sm-0">
+                  Войти
+                </button>
+              </div>
+            </div>
+            <div class="col-3 d-none d-lg-block"></div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footerT">
+        <div class="container">
+          <div class="footerTW">
+            <a href="#" class="footerLogo">
+              <img src="img/admin/logo/footer-logo.svg" alt="logo">
+            </a>
+            <nav class="footerNav">
+              <ul>
+                <li><a href="#">О рынке</a></li>
+                <li><a href="#">Покупателям</a></li>
+                <li><a href="#">Арендаторам</a></li>
+                <li><a href="#">Лавки и Фермеры</a></li>
+                <li><a href="#">Новости</a></li>
+              </ul>
+            </nav>
+            <div class="d-flex gap-2 flex-column flex-xl-row w-sm-100">
+              <button class="button button--brown-80 footerRentBtn" type="button" data-fancybox data-src="#modalRent">
+                <img src="img/icons/btn-rent.svg" alt="icon">
+                Стать арендатором
+              </button>
+              <button class="button button--orange footerOrderBtn" type="button">
+                <img src="img/icons/btn-order.svg" alt="icon">
+                Задать вопрос
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footerB">
+        <div class="container">
+          <div class="d-flex justify-content-between flex-wrap flex-column flex-lg-row gap-3 gap-lg-0">
+            <div class="col">
+              <div class="copyright">
+                2025 © Центральный рынок
+              </div>
+            </div>
+            <div class="col d-flex flex-column gap-2">
+              <a href="#">Соглашение на обработку персональных данных</a>
+              <a href="#">Пользовательское соглашение</a>
+            </div>
+            <div class="col d-flex flex-column gap-2">
+              <a href="#">Реквизиты организации</a>
+              <a href="#">Документы</a>
+            </div>
+            <div class="col">
+              <a href="#" class="develop">
+                <img src="img/icons/develop.svg" alt="develop">
+                Разработка сайта – Вангер.рф
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!-- modal -->
+    <!-- rent -->
+    <div class="modal" id="modalRent">
+
+      <div class="modalHead">
+        <div class="sectHead">
+          <h3 class="h3">Стать арендатором</h3>
+        </div>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="modalForm">
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Имя контактного лица</div>
+            <input type="text" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Телефон</div>
+            <input type="tel" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">E-mail</div>
+            <input type="email" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Комментарий</div>
+            <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+          </div>
+
+          <div class="formBtnW mt-4">
+            <button class="button button--brown-20 formBtn" data-fancybox-close>
+              Отменить
+            </button>
+            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+              Отправить
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- good -->
+    <div class="modal" id="modalGood">
+
+      <div class="modalHead">
+        <div class="sectHead">
+          <h3 class="h3">Похвалить<br class="d-none d-lg-block"> работу рынка</h3>
+        </div>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="modalForm">
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+            <input type="text" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+            <input type="tel" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Текст благодарности</div>
+            <textarea class="formText" name="modalGoodComment" id="modalGoodComment"></textarea>
+          </div>
+
+          <div class="formBtnW mt-4">
+            <button class="button button--brown-20 formBtn" data-fancybox-close>
+              Отменить
+            </button>
+            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanksReviews">
+              Отправить
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- bad -->
+    <div class="modal" id="modalBad">
+
+      <div class="modalHead">
+        <div class="sectHead">
+          <h3 class="h3">Пожаловаться на&nbsp;работу рынка</h3>
+        </div>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="modalForm">
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+            <input type="text" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+            <input type="tel" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Текст жалобы</div>
+            <textarea class="formText" name="modalBadComment" id="modalBadComment"></textarea>
+          </div>
+
+          <div class="formBtnW mt-4">
+            <button class="button button--brown-20 formBtn" data-fancybox-close>
+              Отменить
+            </button>
+            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+              Отправить
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Thanks -->
+    <div class="modal" id="modalThanks">
+
+      <div class="modalHead">
+
+        <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="content text--md">
+          <p>
+            Мы ценим каждую обратную связь.<br> После получения вашей жалобы мы:
+          </p>
+          <ul>
+            <li>
+              Направим заявку в ответственный отдел для детального разбора.
+            </li>
+            <li>
+              Проведём проверку указанных фактов в течение 5 рабочих дней.
+            </li>
+            <li>
+              Свяжемся с вами по указанному телефону, чтобы сообщить о принятых мерах.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thanks Reviews -->
+    <div class="modal" id="modalThanksReviews">
+
+      <div class="modalHead">
+
+        <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="content text--md">
+          <p>
+            Вы можете оставить отзыв на других площадках:
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4 mt-lg-5">
+            <a class="reviews-thanks-logo" href="#" target="_blank">
+              <img src="img/admin/reviews/image-1.svg" alt="image">
+            </a>
+            <a class="reviews-thanks-logo" href="#" target="_blank">
+              <img src="img/admin/reviews/image-2.svg" alt="image">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- rent -->
+    <div class="modal" id="modalRentPage">
+
+      <div class="modalHead">
+
+        <h3 class="h3 mb-2">Стать арендатором</h3>
+
+        <div class="modalDescr text--md mb-3">
+          Отправьте заявку и мы рассчитаем стоимость торгового места.
+        </div>
+
+        <div class="h5 text-normal mb-2">
+          Место №123
+        </div>
+        <div class="d-flex gap-2 mb-4 mb-lg-5">
+          <span>Категория продукции</span>
+          <span class="color-orange">20 кв. м.</span>
+        </div>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="modalForm">
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+            <input type="text" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+            <input type="tel" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Комментарий</div>
+            <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+          </div>
+          <div class="agreement">
+            <input type="checkbox" id="agreement-rent" checked>
+            <label for="agreement-rent">
+              <div class="rect"></div>
+              <div class="agreementText">
+                Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки
+                  персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
+              </div>
+            </label>
+          </div>
+
+          <div class="formBtnW mt-4">
+            <button class="button button--brown-20 formBtn" data-fancybox-close>
+              Отменить
+            </button>
+            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+              Отправить
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- modalAboutShop -->
+    <div class="modal" id="modalAboutShop">
+
+      <div class="sectHead">
+
+        <h3 class="h3 mb-2">Оставить отзыв о&nbsp;&laquo;Название магазина&raquo;</h3>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <div class="modalForm">
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+            <input type="text" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+            <input type="tel" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Email (не обязательно)</div>
+            <input type="email" class="formInput">
+          </div>
+          <div class="inputW">
+            <div class="inputName mb-1 mb-lg-2">Ваш отзыв</div>
+            <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+          </div>
+          <div class="agreement">
+            <input type="checkbox" id="agreement-rent" checked>
+            <label for="agreement-rent">
+              <div class="rect"></div>
+              <div class="agreementText">
+                Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки
+                  персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
+              </div>
+            </label>
+          </div>
+
+          <div class="formBtnW mt-4">
+            <button class="button button--brown-20 formBtn" data-fancybox-close>
+              Отменить
+            </button>
+            <button class="button button--orange formBtn" data-fancybox data-src="#modalAboutThanks">
+              Отправить
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- modalAboutThanks -->
+    <div class="modal" id="modalAboutThanks">
+
+      <div class="sectHead">
+
+        <h3 class="h3 mb-2">Спасибо<br> за ваш отзыв!</h3>
+
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <button class="button button--orange formBtn min-w-240 d-none d-lg-flex" data-fancybox-close>
+          Закрыть
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
+  <script src="js/app.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

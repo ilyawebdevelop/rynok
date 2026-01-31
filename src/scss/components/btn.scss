@@ -149,7 +149,9 @@
   &.min-w-240 {
     min-width: 240px;
   }
-
+&.fz-16 {
+  font-size: 16px;
+}
 
 }
 
@@ -288,4 +290,9 @@
       transform: rotate(180deg);
     }
   }
+}
+.docLoadMore {
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 56px;
 }
