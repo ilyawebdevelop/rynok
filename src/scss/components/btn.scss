@@ -67,6 +67,7 @@
   &--brown-20 {
     background: var(--brown20);
     color: var(--brown80);
+
     svg {
       stroke: transparent;
       fill: var(--brown50);
@@ -149,10 +150,14 @@
   &.min-w-240 {
     min-width: 240px;
   }
-&.fz-16 {
-  font-size: 16px;
-}
 
+  &.fz-16 {
+    font-size: 16px;
+  }
+
+  &.fz-18 {
+    font-size: 18px;
+  }
 }
 
 .bviBtn,
@@ -291,6 +296,7 @@
     }
   }
 }
+
 .docLoadMore {
   padding-left: 32px;
   padding-right: 32px;

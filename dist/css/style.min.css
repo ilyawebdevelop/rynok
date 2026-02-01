@@ -14305,8 +14305,8 @@ section {
 }
 @media (max-width: 991px) {
   section {
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 }
 
@@ -14373,6 +14373,12 @@ section {
 .formText--md {
   height: 80px;
   font-size: 16px;
+}
+.formText.fz-16 {
+  font-size: 16px;
+}
+.formText-min-h-200 {
+  min-height: 200px;
 }
 
 .formSelect {
@@ -14906,6 +14912,11 @@ h5 {
   color: var(--orange);
 }
 @media (max-width: 991px) {
+  .link--lg.link--lg-lg-24 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
   .link--lg.link--lg-lg-16 {
     font-size: 16px;
   }
@@ -15186,6 +15197,11 @@ a.color-orange:hover {
   position: sticky;
   top: 150px;
   padding-bottom: 100px;
+}
+@media (max-width: 991px) {
+  .sidebar {
+    padding-bottom: 60px;
+  }
 }
 .sidebar ul li:not(:last-child) {
   margin-bottom: 8px;
@@ -15477,6 +15493,9 @@ a.color-orange:hover {
 }
 .button.fz-16 {
   font-size: 16px;
+}
+.button.fz-18 {
+  font-size: 18px;
 }
 
 .bviBtn:hover,
@@ -17375,6 +17394,21 @@ a.color-orange:hover {
 }
 .profileNav ul li.active a svg {
   fill: var(--brown80);
+}
+.profileNav ul li.is-notify a {
+  position: relative;
+}
+.profileNav ul li.is-notify a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 23px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: var(--green);
 }
 
 .docW {

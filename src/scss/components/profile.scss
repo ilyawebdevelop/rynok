@@ -1,17 +1,20 @@
 .profile {
   &Nav {
     border-bottom: 1px solid var(--brown50);
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       border-bottom: none;
     }
 
     ul {
       display: flex;
       column-gap: 16px;
-      @media(max-width: 1199px){
+
+      @media(max-width: 1199px) {
         column-gap: 10px;
       }
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         flex-direction: column;
       }
 
@@ -28,10 +31,12 @@
           padding-right: 8px;
           padding-top: 12px;
           padding-bottom: 12px;
-          @media(max-width: 1199px){
+
+          @media(max-width: 1199px) {
             font-size: 16px;
           }
-          @media(max-width: 991px){
+
+          @media(max-width: 991px) {
             font-size: 18px;
             border-bottom: 1px solid var(--brown50);
           }
@@ -50,6 +55,7 @@
 
           &:hover {
             color: var(--brown80);
+
             &:before {
               opacity: 1;
             }
@@ -78,6 +84,26 @@
 
             svg {
               fill: var(--brown80);
+            }
+          }
+        }
+
+        &.is-notify {
+          a {
+            position: relative;
+
+            &::after {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 12px;
+              left: 23px;
+
+              width: 12px;
+              height: 12px;
+              border: 2px solid #fff;
+              border-radius: 50%;
+              background-color: var(--green);
             }
           }
         }
