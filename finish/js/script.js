@@ -259,7 +259,6 @@ $('.freeshopFilterAction').click(function () {
   $(this).parent('.freeshop-filter-action-sm').siblings('.freeshop-filter').slideToggle();
 });
 
-
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('.formInput--password');
 togglePassword?.addEventListener('click', () => {

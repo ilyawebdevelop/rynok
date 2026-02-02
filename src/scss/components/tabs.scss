@@ -5,7 +5,8 @@
     row-gap: 12px;
     width: fit-content;
     flex-wrap: wrap;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       column-gap: 8px;
       row-gap: 8px;
     }
@@ -26,7 +27,8 @@
       border: 1px solid var(--brown50);
       color: var(--brown50);
       transition: background-color .2s linear, color .2s linear, border-color .2s linear;
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         height: 40px;
       }
 
@@ -49,6 +51,91 @@
 
     &--active {
       display: block;
+    }
+  }
+}
+
+.nav-tabs {
+  border-bottom: none;
+  column-gap: 12px;
+  row-gap: 12px;
+  margin-bottom: 24px;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 100px;
+  border-color: var(--brown50);
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--brown50);
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media(max-width: 767px) {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: var(--orange);
+    color: #fff;
+    border-color: var(--orange);
+  }
+
+  &.active {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: #fff;
+  }
+}
+
+.financeTabsNav {
+  row-gap: 8px;
+
+  .tabs__nav-btn {
+    border: none;
+    justify-content: flex-start;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    column-gap: 10px;
+    padding-right: 12px;
+
+    &:hover {
+      .count {
+        background: var(--white);
+        color: var(--orange);
+      }
+    }
+
+    @media(max-width: 991px) {
+      font-size: 16px;
+    }
+
+    .count {
+      border-radius: 12px;
+      width: 24px;
+      height: 24px;
+      background: var(--green);
+      font-family: var(--font-family);
+      font-size: 12px;
+      line-height: 133%;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .2s linear, color .2s linear;
+    }
+
+    &--active {
+      .count {
+        color: var(--orange);
+        background: var(--white);
+      }
     }
   }
 }

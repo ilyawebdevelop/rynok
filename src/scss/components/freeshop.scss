@@ -52,6 +52,10 @@
     max-width: 200px;
     font-size: 16px;
 
+    &::placeholder {
+      font-size: 16px;
+    }
+
     @media(max-width: 1199px) {
       max-width: 160px;
     }
@@ -78,7 +82,8 @@
   &--lg {
     .formInput {
       min-width: 400px;
-      @media(max-width: 575px){
+
+      @media(max-width: 575px) {
         min-width: unset;
       }
     }
@@ -111,4 +116,33 @@
   object-fit: cover;
   flex-shrink: 0;
   box-shadow: 0 4px 24px 0 rgba(64, 38, 17, 0.25);
+}
+
+.freeshop-filter-item .formDate {
+  width: 330px;
+  max-width: 330px;
+}
+
+@media(max-width: 1400px) {}
+
+.financeMainTabs {
+  .freeshop-filter-item--lg .formInput {
+    @media(max-width: 1400px) {
+      min-width: 300px;
+    }
+  }
+
+  .freeshop-reset-btn {
+    @media(max-width: 991px) {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+
+  .freeshop-filter-item .formDate {
+    @media(max-width: 991px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
 }

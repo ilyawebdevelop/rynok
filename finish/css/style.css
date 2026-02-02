@@ -315,6 +315,14 @@ section {
   font-size: 16px;
 }
 
+.formText.fz-16 {
+  font-size: 16px;
+}
+
+.formText-min-h-200 {
+  min-height: 200px;
+}
+
 .formSelect {
   width: 100%;
   height: 56px;
@@ -543,7 +551,11 @@ h5 {
 
 .content > p a {
   display: inline;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.content > p a:hover {
+  opacity: 0.8;
 }
 
 .content > ul {
@@ -572,6 +584,14 @@ h5 {
   letter-spacing: 0.02em;
   color: var(--brown80);
   background: var(--brown20) url("../img/bg/flower-about.svg") no-repeat right top/contain;
+}
+
+.content.text-white > a {
+  border-bottom: 1px solid #fff;
+}
+
+.content.text-white > p > a {
+  border-bottom: 1px solid #fff;
 }
 
 .search {
@@ -722,6 +742,18 @@ h5 {
   letter-spacing: 0.03em;
 }
 
+.link--lg.underline {
+  text-underline-offset: 6px;
+}
+
+.link--lg.underline:hover {
+  text-decoration: underline;
+}
+
+.link--lg.underline:hover:hover {
+  color: var(--orange);
+}
+
 a.text-opacity-80 {
   opacity: 0.8;
 }
@@ -753,6 +785,12 @@ a.color-brown80.underline:hover {
 
 .color-white {
   color: #fff;
+}
+
+a.color-white {
+  color: #fff;
+  -webkit-text-decoration-color: color;
+          text-decoration-color: color;
 }
 
 .color-orange {
@@ -1068,6 +1106,12 @@ a.color-orange:hover {
   margin-left: auto;
 }
 
+.buyer-icon {
+  width: 80px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1211,6 +1255,14 @@ a.color-orange:hover {
   min-width: 240px;
 }
 
+.button.fz-16 {
+  font-size: 16px;
+}
+
+.button.fz-18 {
+  font-size: 18px;
+}
+
 .bviBtn:hover,
 .accountBtn:hover {
   opacity: 0.75;
@@ -1301,6 +1353,12 @@ a.color-orange:hover {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.docLoadMore {
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 56px;
 }
 
 /* Hamburger Menu */
@@ -2673,6 +2731,37 @@ a.color-orange:hover {
   fill: var(--brown80);
 }
 
+.profileNav ul li.is-notify a {
+  position: relative;
+}
+
+.profileNav ul li.is-notify a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 23px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+
+.docW {
+  background: var(--white);
+  padding: 48px 48px 60px;
+  border-radius: 48px;
+}
+
+.doc-link-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40px;
+  background: url("../img/icons/download.svg") no-repeat left top 7px/32px;
+}
+
 .footerT {
   background: var(--brown50);
   padding-top: 32px;
@@ -2869,6 +2958,10 @@ a.color-orange:hover {
     height: 450px;
   }
 
+  .buyer-icon {
+    width: 60px;
+  }
+
   .button {
     font-size: 16px;
   }
@@ -3051,8 +3144,8 @@ a.color-orange:hover {
 
 @media (max-width: 991px) {
   section {
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .p-49 {
@@ -3149,12 +3242,24 @@ a.color-orange:hover {
     font-size: 20px;
   }
 
+  .link--lg.link--lg-lg-24 {
+    font-size: 24px;
+  }
+
+  .link--lg.link--lg-lg-16 {
+    font-size: 16px;
+  }
+
   .galSlide--lg img {
     height: 520px;
   }
 
   .anchor-content {
     margin-bottom: 40px;
+  }
+
+  .sidebar {
+    padding-bottom: 60px;
   }
 
   .oveflow-lg-hidden {
@@ -3175,6 +3280,10 @@ a.color-orange:hover {
 
   .rent-phone-wrap {
     min-height: 300px;
+  }
+
+  .buyer-icon {
+    width: 80px;
   }
 
   .button--lg {
@@ -3496,6 +3605,16 @@ a.color-orange:hover {
     border-bottom: 1px solid var(--brown50);
   }
 
+  .docW {
+    padding: 32px;
+    border-radius: 40px;
+  }
+
+  .doc-link-download {
+    padding-left: 32px;
+    background: url("../img/icons/download.svg") no-repeat left top 3px/24px;
+  }
+
   .footerT {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -3610,6 +3729,10 @@ a.color-orange:hover {
     font-weight: bold !important;
   }
 
+  .fw-sm-normal {
+    font-weight: normal !important;
+  }
+
   .formBtnW {
     row-gap: 10px;
     -webkit-column-gap: 0;
@@ -3650,6 +3773,14 @@ a.color-orange:hover {
   .priceW {
     margin-left: -15px;
     margin-right: -15px;
+  }
+
+  .underline-sm-none {
+    text-decoration: unset !important;
+  }
+
+  .font-family-sm-normal {
+    font-family: var(--font-family);
   }
 
   .button {

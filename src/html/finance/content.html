@@ -1,0 +1,458 @@
+<section class="sect oveflow-lg-hidden">
+  <div class="container">
+
+    <div class="mb-5">
+      @@include('../profile/nav.html',{})
+    </div>
+
+    <div class="pageHead mb-4">
+      <h1 class="h2--sm">
+        Финансы
+      </h1>
+    </div>
+
+    <div class="tabs financeMainTabs" data-tabs="popup">
+      <div class="row">
+        <div class="col-lg-8 col-xxl-9 order-2 order-lg-1">
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="p-4 finance-balance">
+                <h5 class="mb-3 fw-bold">Текущий баланс (дебет/кредит)</h5>
+                <div class="finance-balance-sum">
+                  120 000 <span>руб.</span>
+                </div>
+              </div>
+
+              <h5 class="mt-4 pt-3 mb-4 fw-bold">
+                Неоплаченные счета
+              </h5>
+
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="finance-1-tab" data-bs-toggle="tab" data-bs-target="#finance-1"
+                    type="button" role="tab" aria-controls="finance-1" aria-selected="true">Все</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="finance-2-tab" data-bs-toggle="tab" data-bs-target="#finance-2"
+                    type="button" role="tab" aria-controls="finance-2" aria-selected="false">№1234</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="finance-3-tab" data-bs-toggle="tab" data-bs-target="#finance-3"
+                    type="button" role="tab" aria-controls="finance-3" aria-selected="false">№1235</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="finance-4-tab" data-bs-toggle="tab" data-bs-target="#finance-4"
+                    type="button" role="tab" aria-controls="finance-4" aria-selected="false">№1236</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="financePays">
+                <div class="tab-pane fade show active" id="finance-1" role="tabpanel" aria-labelledby="finance-1-tab">
+                  <div class="financeTable d-none d-md-block">
+                    <div class="financeHead">
+                      <div class="col">Дата</div>
+                      <div class="col">№ счёта</div>
+                      <div class="col">Основание</div>
+                      <div class="col">№ места</div>
+                      <div class="col">Сумма по счёту</div>
+                    </div>
+                    <div class="financeBody">
+                      <ul>
+                        <li class="financeItem">
+                          <div class="col">19.01.2026</div>
+                          <div class="col">123456789</div>
+                          <div class="col">Аренда торгового места</div>
+                          <div class="col">№1234</div>
+                          <div class="col">20 000 руб.</div>
+                          <div class="col">
+                            <button class="financeItemBtn">
+                              <img src="@img/icons/more.svg" alt="more">
+                            </button>
+                          </div>
+                        </li>
+                        <li class="financeItem">
+                          <div class="col">19.01.2026</div>
+                          <div class="col">123456789</div>
+                          <div class="col">Аренда торгового места Аренда торгового места</div>
+                          <div class="col">№1235</div>
+                          <div class="col">30 000 руб.</div>
+                          <div class="col">
+                            <button class="financeItemBtn">
+                              <img src="@img/icons/more.svg" alt="more">
+                            </button>
+                          </div>
+                        </li>
+                        <li class="financeItem">
+                          <div class="col">25.02.2025</div>
+                          <div class="col">123456789</div>
+                          <div class="col">Аренда торгового</div>
+                          <div class="col">№1236</div>
+                          <div class="col">50 000 руб.</div>
+                          <div class="col">
+                            <button class="financeItemBtn">
+                              <img src="@img/icons/more.svg" alt="more">
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="financeTableMd d-block d-md-none">
+
+                    <div class="financeTableMdItem mb-2">
+                      <div class="financeTableMdItemHead">
+                        <div class="d-flex justify-content-between gap-2">
+                          <div class="d-flex gap-3">
+                            <span class="fz-14 financeTableMdItemDate">19.01.2026</span>
+                            <span class="fz-14 financeTableMdItemNumber">№123456789</span>
+                          </div>
+                          <button class="financeTableItemBtn">
+                            <img src="@img/icons/more.svg" alt="button">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="financeTableMdItemBody">
+                        <div class="financeTableMdItemName fz-18">
+                          Аренда торгового места
+                        </div>
+                        <div class="financeTableMdItemFooter d-flex justify-content-between gap-3">
+                          <div class="col">
+                            №1234
+                          </div>
+                          <div class="col fw-bold text-end">
+                            20 000 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="financeTableMdItem mb-2">
+                      <div class="financeTableMdItemHead">
+                        <div class="d-flex justify-content-between gap-2">
+                          <div class="d-flex gap-3">
+                            <span class="fz-14 financeTableMdItemDate">19.01.2026</span>
+                            <span class="fz-14 financeTableMdItemNumber">№123456789</span>
+                          </div>
+                          <button class="financeTableItemBtn">
+                            <img src="@img/icons/more.svg" alt="button">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="financeTableMdItemBody">
+                        <div class="financeTableMdItemName fz-18">
+                          Аренда торгового места Аренда торгового места
+                        </div>
+                        <div class="financeTableMdItemFooter d-flex justify-content-between gap-3">
+                          <div class="col">
+                            №1235
+                          </div>
+                          <div class="col fw-bold text-end">
+                            120 000 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="finance-2" role="tabpanel" aria-labelledby="finance-2-tab">
+                  <div class="financeTable d-none d-md-block">
+                    <div class="financeHead">
+                      <div class="col">Дата</div>
+                      <div class="col">№ счёта</div>
+                      <div class="col">Основание</div>
+                      <div class="col">№ места</div>
+                      <div class="col">Сумма по счёту</div>
+                    </div>
+                    <div class="financeBody">
+                      <ul>
+                        <li class="financeItem">
+                          <div class="col">19.01.2026</div>
+                          <div class="col">123456789</div>
+                          <div class="col">Аренда торгового места</div>
+                          <div class="col">№1234</div>
+                          <div class="col">20 000 руб.</div>
+                          <div class="col">
+                            <button class="financeItemBtn">
+                              <img src="@img/icons/more.svg" alt="more">
+                            </button>
+                          </div>
+                        </li>
+                        <li class="financeItem">
+                          <div class="col">19.01.2026</div>
+                          <div class="col">123456789</div>
+                          <div class="col">Аренда торгового места Аренда торгового места</div>
+                          <div class="col">№1235</div>
+                          <div class="col">30 000 руб.</div>
+                          <div class="col">
+                            <button class="financeItemBtn">
+                              <img src="@img/icons/more.svg" alt="more">
+                            </button>
+                          </div>
+                        </li>
+                        <li class="financeItem">
+                          <div class="col">25.02.2025</div>
+                          <div class="col">123456789</div>
+                          <div class="col">Аренда торгового</div>
+                          <div class="col">№1236</div>
+                          <div class="col">50 000 руб.</div>
+                          <div class="col">
+                            <button class="financeItemBtn">
+                              <img src="@img/icons/more.svg" alt="more">
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="financeTableMd d-block d-md-none">
+
+                    <div class="financeTableMdItem mb-2">
+                      <div class="financeTableMdItemHead">
+                        <div class="d-flex justify-content-between gap-2">
+                          <div class="d-flex gap-3">
+                            <span class="fz-14 financeTableMdItemDate">19.01.2026</span>
+                            <span class="fz-14 financeTableMdItemNumber">№123456789</span>
+                          </div>
+                          <button class="financeTableItemBtn">
+                            <img src="@img/icons/more.svg" alt="button">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="financeTableMdItemBody">
+                        <div class="financeTableMdItemName fz-18">
+                          Аренда торгового места
+                        </div>
+                        <div class="financeTableMdItemFooter d-flex justify-content-between gap-3">
+                          <div class="col">
+                            №1234
+                          </div>
+                          <div class="col fw-bold text-end">
+                            20 000 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="financeTableMdItem mb-2">
+                      <div class="financeTableMdItemHead">
+                        <div class="d-flex justify-content-between gap-2">
+                          <div class="d-flex gap-3">
+                            <span class="fz-14 financeTableMdItemDate">19.01.2026</span>
+                            <span class="fz-14 financeTableMdItemNumber">№123456789</span>
+                          </div>
+                          <button class="financeTableItemBtn">
+                            <img src="@img/icons/more.svg" alt="button">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="financeTableMdItemBody">
+                        <div class="financeTableMdItemName fz-18">
+                          Аренда торгового места Аренда торгового места
+                        </div>
+                        <div class="financeTableMdItemFooter d-flex justify-content-between gap-3">
+                          <div class="col">
+                            №1235
+                          </div>
+                          <div class="col fw-bold text-end">
+                            120 000 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="financeTableMdItem mb-2">
+                      <div class="financeTableMdItemHead">
+                        <div class="d-flex justify-content-between gap-2">
+                          <div class="d-flex gap-3">
+                            <span class="fz-14 financeTableMdItemDate">19.01.2026</span>
+                            <span class="fz-14 financeTableMdItemNumber">№123456789</span>
+                          </div>
+                          <button class="financeTableItemBtn">
+                            <img src="@img/icons/more.svg" alt="button">
+                          </button>
+                        </div>
+                      </div>
+                      <div class="financeTableMdItemBody">
+                        <div class="financeTableMdItemName fz-18">
+                          Аренда торгового места Аренда торгового места
+                        </div>
+                        <div class="financeTableMdItemFooter d-flex justify-content-between gap-3">
+                          <div class="col">
+                            №1235
+                          </div>
+                          <div class="col fw-bold text-end">
+                            120 000 руб.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="finance-3" role="tabpanel" aria-labelledby="finance-3-tab">
+                  3-я вкладка
+                </div>
+                <div class="tab-pane fade" id="finance-4" role="tabpanel" aria-labelledby="finance-4-tab">
+                  4-я вкладка
+                </div>
+              </div>
+
+            </div>
+            <div class="tabs__panel">
+
+              <h5 class="mb-4 fw-bold">
+                Оплаченные счета (архив)
+              </h5>
+
+              <div class="freeshop-filter mb-4 pb-0 pb-lg-3">
+                <div class="freeshop-filter-item freeshop-filter-item--lg search">
+                  <div class="input-name mb-1">№ счёта, основание или № места </div>
+                  <input type="search" class="formInput formInput--md" placeholder="Поиск">
+                  <button class="searchBtn">
+                    <img src="@img/icons/search.svg" alt="search">
+                  </button>
+                </div>
+                <div class="freeshop-filter-item">
+                  <div class="input-name mb-1">Дата </div>
+                  <input type="text" class="formInput formDate">
+                </div>
+                <button class="button button--brown-20 freeshop-reset-btn">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#reset"></use>
+                  </svg>
+                  Сбросить все
+                </button>
+              </div>
+
+              <div class="financeTable d-none d-md-block">
+                <div class="financeHead">
+                  <div class="col">Дата</div>
+                  <div class="col">№ счёта</div>
+                  <div class="col">Основание</div>
+                  <div class="col">№ места</div>
+                  <div class="col">Сумма по счёту</div>
+                </div>
+                <div class="financeBody">
+                  <ul>
+                    <li class="financeItem">
+                      <div class="col">19.01.2026</div>
+                      <div class="col">123456789</div>
+                      <div class="col">Аренда торгового места</div>
+                      <div class="col">№1234</div>
+                      <div class="col">20 000 руб.</div>
+                      <div class="col">
+                        <button class="financeItemBtn">
+                          <img src="@img/icons/more.svg" alt="more">
+                        </button>
+                      </div>
+                    </li>
+                    <li class="financeItem">
+                      <div class="col">19.01.2026</div>
+                      <div class="col">123456789</div>
+                      <div class="col">Аренда торгового места Аренда торгового места</div>
+                      <div class="col">№1235</div>
+                      <div class="col">30 000 руб.</div>
+                      <div class="col">
+                        <button class="financeItemBtn">
+                          <img src="@img/icons/more.svg" alt="more">
+                        </button>
+                      </div>
+                    </li>
+                    <li class="financeItem">
+                      <div class="col">25.02.2025</div>
+                      <div class="col">123456789</div>
+                      <div class="col">Аренда торгового</div>
+                      <div class="col">№1236</div>
+                      <div class="col">50 000 руб.</div>
+                      <div class="col">
+                        <button class="financeItemBtn">
+                          <img src="@img/icons/more.svg" alt="more">
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="financeTableMd d-block d-md-none">
+
+                <div class="financeTableMdItem mb-2">
+                  <div class="financeTableMdItemHead">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <span class="fz-14 financeTableMdItemDate">19.01.2026</span>
+                        <span class="fz-14 financeTableMdItemNumber">№123456789</span>
+                      </div>
+                      <button class="financeTableItemBtn">
+                        <img src="@img/icons/more.svg" alt="button">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="financeTableMdItemBody">
+                    <div class="financeTableMdItemName fz-18">
+                      Аренда торгового места
+                    </div>
+                    <div class="financeTableMdItemFooter d-flex justify-content-between gap-3">
+                      <div class="col">
+                        №1234
+                      </div>
+                      <div class="col fw-bold text-end">
+                        20 000 руб.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="financeTableMdItem mb-2">
+                  <div class="financeTableMdItemHead">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <span class="fz-14 financeTableMdItemDate">19.01.2026</span>
+                        <span class="fz-14 financeTableMdItemNumber">№123456789</span>
+                      </div>
+                      <button class="financeTableItemBtn">
+                        <img src="@img/icons/more.svg" alt="button">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="financeTableMdItemBody">
+                    <div class="financeTableMdItemName fz-18">
+                      Аренда торгового места Аренда торгового места
+                    </div>
+                    <div class="financeTableMdItemFooter d-flex justify-content-between gap-3">
+                      <div class="col">
+                        №1235
+                      </div>
+                      <div class="col fw-bold text-end">
+                        120 000 руб.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <button class="button loadmore button--brown-50-transparent mt-5 mx-auto">
+                <span class="color-brown50">Загрузить ещё</span>
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-xxl-3 order-1 order-lg-2">
+          <div class="sidebar pt-0 pt-md-4">
+            <ul class="tabs__nav financeTabsNav">
+              <li class="tabs__nav-item mb-0 w-100"><button class="tabs__nav-btn w-100" type="button">Баланс и
+                  неоплаченные счета <div class="count">3</div></button></li>
+              <li class="tabs__nav-item mb-0 w-100"><button class="tabs__nav-btn w-100" type="button"> Оплаченные счета
+                  (архив)</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

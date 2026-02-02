@@ -302,3 +302,9 @@
   padding-right: 32px;
   height: 56px;
 }
+.financeTableItemBtn {
+  padding: 16px;
+  &:hover {
+    opacity: .85;
+  }
+}
