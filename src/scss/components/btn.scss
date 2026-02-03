@@ -302,9 +302,37 @@
   padding-right: 32px;
   height: 56px;
 }
+
 .financeTableItemBtn {
   padding: 16px;
+
   &:hover {
     opacity: .85;
+  }
+}
+
+.button-action {
+  height: 100%;
+  width: 40px;
+  flex-shrink: 0;
+
+  &:hover {
+    svg {
+      fill: var(--orange);
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--brown50);
+    stroke: transparent;
+  }
+}
+.priceEdit {
+  @media(max-width: 767px){
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 56px;
   }
 }

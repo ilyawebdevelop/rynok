@@ -1,5 +1,8 @@
 import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
+
+
+import AirDatepicker from 'air-datepicker';
 import "./../../node_modules/page-scroll-to-id/jquery.malihu.PageScroll2id.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
 import "./modules/bootstrap.bundle.min.js";
@@ -9,6 +12,16 @@ flsFunctions.isWebp();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,
+});
+
+let formCalendarArray = document.querySelectorAll('.formDate');
+formCalendarArray.forEach(el => {
+  new AirDatepicker(el, {
+    range: true,
+    multipleDatesSeparator: ' - ',
+    autoClose: true,
+    // position: "top left",
+  })
 });
 
 (function ($) {
