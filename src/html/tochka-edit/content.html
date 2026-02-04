@@ -1,0 +1,207 @@
+<section class="sect overflow-hidden">
+  <div class="container">
+
+    <div class="mb-5">
+      @@include('../profile/nav.html',{})
+    </div>
+
+    <a href="#" class="h5 color-orange fw-bold mb-5 d-block d-lg-none">← Все торговые точки</a>
+
+    <div
+      class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-3 mb-3 pb-1 position-relative">
+      <h1 class="h2 h2--sm h2--sm-h5 mb-0 max-w-sm-240 mb-4 mb-lg-0">
+        Редактировать торговую точку
+      </h1>
+      <a href="#" class="button button--brown-20 button--575-w-100">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#eye"></use>
+        </svg>
+        Предварительный просмотр
+      </a>
+    </div>
+
+    <form class="position-relative" action="#">
+
+      <div class="inputW">
+        <div class="fz-20 mb-2 px-4">
+          Наименование
+        </div>
+        <input type="text" class="formInput formInput--lg-h-56" placeholder="Название магазина">
+      </div>
+      <div class="inputW">
+        <div class="fz-20 mb-2 px-4">
+          Направление
+        </div>
+        <select name="ovosh_prod" id="ovosh_prod" class="formSelect">
+          <option value="1">Овощеводческая продукция</option>
+          <option value="1">Овощеводческая продукция 2</option>
+          <option value="1">Овощеводческая продукция 3</option>
+        </select>
+      </div>
+
+      <div class="inputW">
+        <div class="fz-20 mb-2 px-4">
+          Номер места
+        </div>
+        <div class="d-flex flex-wrap align-items-center gap-2 inputAddWrap">
+          <div class="inputW mb-0">
+            <input type="number" class="formInput max-w-160 no-focus formInput--lg-h-56" value="125" readonly>
+          </div>
+          <div class="inputW mb-0">
+            <input type="number" class="formInput max-w-160 no-focus formInput--lg-h-56" value="126" readonly>
+          </div>
+          <div class="inputW mb-0">
+            <input type="number" class="formInput max-w-160 no-focus formInput--lg-h-56" value="127" readonly>
+          </div>
+          <button class="button button--brown-20 button--575-w-100 inputAdd order-2" type="button">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#plus"></use>
+            </svg>
+            Добавить еще
+          </button>
+        </div>
+      </div>
+
+      <div class="inputW">
+        <div class="fz-20 mb-2 px-4">
+          Фотографии
+        </div>
+
+        <div class="d-flex gap-3 flex-wrap">
+
+          <div class="photo-item completed" style="background-image: url('@img/admin/gal/image-2.jpg');">
+            <input id="file-1" type="file" class="photo-item-input">
+            <label for="file-1">
+              <button class="photo-item-add-image align-items-center justify-content-center gap-2 pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#plus"></use>
+                </svg>
+                <span class="fz-18">Добавить фото</span>
+              </button>
+
+              <button class="photo-item-remove-image" type="button">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#trash"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+
+          <div class="photo-item completed" style="background-image: url('@img/admin/gal/image-3.jpg');">
+            <input id="file-3" type="file" class="photo-item-input">
+            <label for="file-3">
+              <button class="photo-item-add-image align-items-center justify-content-center gap-2 pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#plus"></use>
+                </svg>
+                <span class="fz-18">Добавить фото</span>
+              </button>
+
+              <button class="photo-item-remove-image" type="button">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#trash"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+          <div class="photo-item completed" style="background-image: url('@img/admin/gal/image-4.jpg');">
+            <input id="file-4" type="file" class="photo-item-input">
+            <label for="file-4">
+              <button class="photo-item-add-image align-items-center justify-content-center gap-2 pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#plus"></use>
+                </svg>
+                <span class="fz-18">Добавить фото</span>
+              </button>
+
+              <button class="photo-item-remove-image" type="button">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#trash"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+
+          <div class="photo-item completed" style="background-image: url('@img/admin/gal/image-5.jpg');">
+            <input id="file-5" type="file" class="photo-item-input">
+            <label for="file-5">
+              <button class="photo-item-add-image align-items-center justify-content-center gap-2 pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#plus"></use>
+                </svg>
+                <span class="fz-18">Добавить фото</span>
+              </button>
+
+              <button class="photo-item-remove-image" type="button">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#trash"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+
+          <div class="photo-item" style="background-image: url('');">
+            <input id="file-2" type="file" class="photo-item-input">
+            <label for="file-2">
+              <button class="photo-item-add-image align-items-center justify-content-center gap-2 pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#plus"></use>
+                </svg>
+                <span class="fz-18">Добавить фото</span>
+              </button>
+
+              <button class="photo-item-remove-image" type="button">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#trash"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="fz-20 mb-2 px-4">
+        Описание
+      </div>
+      <div class="p-4 rounded-4 bg--white position-relative border-brown50 mb-4 overflow-sm-scroll thumb-sm-brown50 max-h-400-sm">
+        <div class="content fz-20 color-brown50">
+          <p>
+            Овощеводство является одной из основных и наиболее трудоёмких отраслей сельскохозяйственного производства.
+            На этой неделе мы хотим познакомить вас с одним из крупнейших тепличных предприятий Сибири и Дальнего
+            Востока
+            АО «Тепличное» г. Ангарска, которое имеет 7,8 га зимних и 4,5 га весенних теплиц, находятся в рабочем
+            состоянии и выращивает свою продукцию круглый год.
+            Объем производства продукции в защищённом грунте более 3,4 тыс. тонн. в год.
+            Богатейший ассортимент экологически чистых овощей — это огурцы, томаты, баклажаны, перцы и полный набор
+            зеленных культур таких, как салат, базилик, мята.
+            Овощеводческая продукция, производимая АО «Тепличное», для Иркутской области считается продукцией местного
+            производства, пользующаяся у населения особым, повышенным спросом, т.к. овощи выращиваются экологически
+            чистые.
+          </p>
+          <p>
+            Одним из важных факторов производства овощей закрытого грунта являются современные теплицы типа «Ангар», в
+            которых применяются новые технологии выращивания.
+            Вся продукция АО «Тепличное» сертифицирована Иркутским Центром Стандартизации, Метрологии и Сертификации.
+            Продукция реализуется в магазинах городов и населённых пунктов Иркутской области, а также представлена на
+            МУП
+            «Центральный рынок» торговый павильон № 322.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end gap-2 flex-column-reverse flex-sm-row mt-4 pt-3 pt-lg-0 mt-lg-0">
+        <button class="button button--brown-20 min-w-200 button--575-w-100">
+          Отменить
+        </button>
+        <button class="button button--orange min-w-200 button--575-w-100">
+          Сохранить
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>

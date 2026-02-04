@@ -2,6 +2,16 @@ Fancybox.bind("[data-fancybox]", {
   closeButton: false,
 });
 
+let formCalendarArray = document.querySelectorAll('.formDate');
+formCalendarArray.forEach(el => {
+  new AirDatepicker(el, {
+    range: true,
+    multipleDatesSeparator: ' - ',
+    autoClose: true,
+    // position: "top left",
+  })
+});
+
 (function ($) {
   $(window).on("load", function () {
     $("a[rel='m_PageScroll2id']").mPageScroll2id({
@@ -268,3 +278,67 @@ togglePassword?.addEventListener('click', () => {
     'text' : 'password';
   password.setAttribute('type', type);
 });
+
+let inputAdd = document.querySelectorAll('.inputAdd');
+inputAdd.forEach(el => {
+  el.addEventListener('click', () => {
+    const container = el.closest('.inputAddWrap');
+    // 1. Создаем новый div
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('inputW'); // Добавляем класс
+    newDiv.classList.add('mb-0'); // Добавляем класс
+    // 2. Создаем input
+    const newInput = document.createElement('input');
+    newInput.type = 'number';
+    newInput.placeholder = 'Число';
+    newInput.classList.add('formInput');
+    newInput.classList.add('formInput--lg-h-56');
+    newInput.classList.add('max-w-160');
+    // 3. Помещаем input внутрь div
+    newDiv.appendChild(newInput);
+    // 4. Помещаем готовый div на страницу
+    container.appendChild(newDiv);
+  });
+});
+
+
+let inputImageArray = document.querySelectorAll('.photo-item-input');
+
+inputImageArray.forEach(el => {
+  let image = el.closest('.photo-item');
+  let removeImageBtn = el.closest('.photo-item').querySelector('.photo-item-remove-image');
+  el?.addEventListener('change', () => {
+    uploadFile(el.files[0], el, image);
+  });
+  removeImageBtn?.addEventListener('click', () => {
+    image.style.backgroundImage = "none";
+    image.classList.remove('completed');
+  });
+});
+
+function uploadFile(file, formImage, formUrlImage) {
+  //проверяем тип файла
+  if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
+    alert('Разрешены только изображения');
+    formImage.value = '';
+    return;
+  }
+  formImage.value = '';
+
+  if (file.size > 1 * 1024 * 1024) {
+    alert('Файл должен быть менее 1 МБ.');
+    return;
+  }
+
+  var reader = new FileReader();
+  reader.onload = function (e) {
+    console.log('Отправка');
+    formUrlImage.style.backgroundImage = `url('${e.target.result}')`;
+    formUrlImage.classList.add('completed');
+  };
+  reader.onerror = function (e) {
+    alert('Ошибка');
+    formUrlImage.style.display = 'none';
+  };
+  reader.readAsDataURL(file);
+}

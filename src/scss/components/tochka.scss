@@ -1,0 +1,105 @@
+.photo-item {
+  background-color: var(--brown20);
+  border-radius: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media(max-width: 575px) {
+    width: 100%;
+    height: 55vw;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    height: 120px;
+    width: 220px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @media(max-width: 575px) {
+      width: 100%;
+      height: 100%;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      stroke: transparent;
+      fill: var(--brown80);
+    }
+  }
+
+  .photo-item-remove-image {
+    display: none;
+  }
+
+  .photo-item-add-image {
+    display: flex;
+  }
+
+  &.completed {
+    .photo-item-add-image {
+      display: none;
+    }
+
+    .photo-item-remove-image {
+      display: flex;
+    }
+  }
+}
+
+.photo-item-remove-image {
+  width: 32px;
+  height: 32px;
+  background-color: var(--brown20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 50%;
+
+  svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+.thumb-sm-brown50 {
+  @media(max-width: 575px) {
+
+    /* Target the whole scrollbar (necessary to define width/height) */
+    &::-webkit-scrollbar {
+      width: 8px;
+      /* width of the vertical scrollbar */
+      height: 12px;
+      /* height of the horizontal scrollbar */
+    }
+
+    /* Style the thumb */
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--brown50);
+      /* Color of the draggable handle */
+      border-radius: 10px;
+      /* Rounded corners for the thumb */
+    }
+
+    /* Style the track (background) */
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    /* Add hover effect to the thumb */
+    &::-webkit-scrollbar-thumb:hover {
+      background-color:  var(--brown50);
+    }
+  }
+}

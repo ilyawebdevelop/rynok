@@ -84,6 +84,11 @@ section {
 
 .inputW {
   margin-bottom: 20px;
+  &-lg-mb-12 {
+    @media(max-width: 991px){
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .inputName {
@@ -166,6 +171,9 @@ section {
     padding-left: 24px;
     padding-right: 24px;
   }
+  &::placeholder {
+    color: var(--brown50);
+  }
 
   &--md {
     height: 40px;
@@ -190,6 +198,19 @@ section {
     &:focus {
       padding-right: 49px;
       // background: #fff url('@img/icons/eye.svg') no-repeat right 23px center / 24px;
+    }
+  }
+  &.no-focus {
+    &:focus {
+      border: 1px solid var(--brown50);
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  &.max-w-160 {
+    max-width: 160px;
+    @media(max-width: 575px){
+      max-width: 100%;
     }
   }
 }
@@ -426,7 +447,7 @@ h4,
   }
 }
 
-h5 {
+h5, .h5 {
   font-size: 24px;
   line-height: 28px;
 }
@@ -708,7 +729,9 @@ h5 {
     }
   }
 }
-
+.border-brown50 {
+  border: 1px solid var(--brown50);
+}
 a.text-opacity-80 {
   opacity: .8;
 
@@ -1325,4 +1348,26 @@ a.color-orange {
 
 .tableMdItemNumber {
   padding: 12px 8px;
+}
+.max-w-sm-240 {
+  @media(max-width: 575px){
+    max-width: 240px;
+  }
+}
+.inputAddWrap {
+  .inputW {
+    @media(max-width: 575px){
+      width: 100%;
+    }
+  }
+}
+.overflow-sm-scroll {
+  @media(max-width: 575px){
+    overflow-y: scroll;
+  }
+}
+.max-h-400-sm{
+  @media(max-width: 575px){
+    max-height: 400px;
+  }
 }
