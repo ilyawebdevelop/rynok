@@ -18470,6 +18470,11 @@ a.color-orange:hover {
   opacity: 0;
   transition: opacity 0.2s linear;
 }
+@media (max-width: 991px) {
+  .profileNav ul li a::before {
+    bottom: 0;
+  }
+}
 .profileNav ul li a:hover {
   color: var(--brown80);
 }

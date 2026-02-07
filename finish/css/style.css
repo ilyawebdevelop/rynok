@@ -4202,6 +4202,10 @@ a.color-orange:hover {
     font-size: 18px;
   }
 
+  .profileNav ul li a::before {
+    bottom: 0;
+  }
+
   .docW {
     padding: 32px;
     border-radius: 40px;

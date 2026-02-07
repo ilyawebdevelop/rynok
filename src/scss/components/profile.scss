@@ -65,6 +65,9 @@
             left: 0;
             opacity: 0;
             transition: opacity .2s linear;
+            @media(max-width: 991px){
+              bottom: 0;
+            }
           }
 
           &:hover {
