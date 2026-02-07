@@ -1635,7 +1635,7 @@ a.color-orange:hover {
   width: 640px;
   background-color: var(--background);
   border-radius: 48px;
-  padding: 48px;
+  padding: 0 5px 0 0;
   color: var(--main-color);
   background-image: url("../img/modal/modal-flower.svg");
   background-repeat: no-repeat;
@@ -1643,6 +1643,7 @@ a.color-orange:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  overflow: hidden;
 }
 
 .modal .h3 {
@@ -1687,6 +1688,16 @@ a.color-orange:hover {
 
 #modalAboutShop .h3 {
   max-width: 490px;
+}
+
+.modalInner {
+  overflow-y: auto;
+  padding: 48px 43px 48px 48px;
+  max-height: 100%;
+}
+
+#modalAboutShop .sectHead {
+  max-width: calc(100% - 40px);
 }
 
 .tabs__nav {
@@ -3023,6 +3034,7 @@ a.color-orange:hover {
   padding-right: 8px;
   padding-top: 12px;
   padding-bottom: 12px;
+  white-space: nowrap;
 }
 
 .profileNav ul li a::before {
@@ -3897,14 +3909,18 @@ a.color-orange:hover {
   }
 
   .modal {
-    padding: 32px;
     border-radius: 40px;
+    padding: 0 3px 0 0;
   }
 
   .modal .h3 {
     font-size: 24px;
     line-height: 100%;
     text-transform: unset;
+  }
+
+  .modalInner {
+    padding: 20px 17px 20px 20px;
   }
 
   .tabs__nav {
@@ -4176,15 +4192,14 @@ a.color-orange:hover {
   }
 
   .profileNav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    overflow-x: auto;
+    -webkit-column-gap: 4px;
+       -moz-column-gap: 4px;
+            column-gap: 4px;
   }
 
   .profileNav ul li a {
     font-size: 18px;
-    border-bottom: 1px solid var(--brown50);
   }
 
   .docW {
@@ -4537,7 +4552,7 @@ a.color-orange:hover {
   }
 
   .catsSlider-sm-2 {
-    padding-right: 15px;
+    padding-right: 100px;
     overflow: visible;
   }
 
@@ -4577,6 +4592,13 @@ a.color-orange:hover {
             column-gap: 4px;
     font-size: 14px;
     line-height: 14px;
+  }
+
+  .profileNav ul {
+    margin-left: -12px;
+    padding-left: 12px;
+    margin-right: -12px;
+    padding-right: 12px;
   }
 
   .photo-item {

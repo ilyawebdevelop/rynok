@@ -111,7 +111,7 @@ document.querySelectorAll('.catsSlider-sm-2').forEach(n => {
     },
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 12,
       },
       576: {

@@ -15,8 +15,21 @@
       }
 
       @media(max-width: 991px) {
-        flex-direction: column;
+        overflow-x: auto;
+        column-gap: 4px;
       }
+
+      @media(max-width: 575px) {
+        margin-left: -12px;
+        padding-left: 12px;
+        margin-right: -12px;
+        padding-right: 12px;
+      }
+
+
+      // @media(max-width: 991px) {
+      //   flex-direction: column;
+      // }
 
       li {
         a {
@@ -31,6 +44,7 @@
           padding-right: 8px;
           padding-top: 12px;
           padding-bottom: 12px;
+          white-space: nowrap;
 
           @media(max-width: 1199px) {
             font-size: 16px;
@@ -38,7 +52,7 @@
 
           @media(max-width: 991px) {
             font-size: 18px;
-            border-bottom: 1px solid var(--brown50);
+            // border-bottom: 1px solid var(--brown50);
           }
 
           &::before {

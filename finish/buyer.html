@@ -23,7 +23,7 @@
 
 <body>
 
-  <div class="wrapper">
+   <div class="wrapper">
     <!-- Header -->
     <header class="header" id="header">
       <div class="container">
@@ -541,10 +541,7 @@
               </div>
             </div>
             <div class="qualityCol qualityImageWrap">
-              <picture>
-                <source srcset="img/admin/quality/image-1.webp" type="image/webp"><img
-                  src="img/admin/quality/image-1.jpg" alt="image" class="qualityImage">
-              </picture>
+              <img src="img/admin/quality/image-1.jpg" alt="image" class="qualityImage">
             </div>
           </div>
         </div>
@@ -595,14 +592,8 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <picture>
-                  <source srcset="img/admin/callback/image-1.webp" type="image/webp"><img
-                    class="callbackImage d-none d-lg-block" src="img/admin/callback/image-1.png" alt="image">
-                </picture>
-                <picture>
-                  <source srcset="img/admin/callback/image-2.webp" type="image/webp"><img
-                    class="callbackImage d-block d-lg-none" src="img/admin/callback/image-2.png" alt="image">
-                </picture>
+                <img class="callbackImage d-none d-lg-block" src="img/admin/callback/image-1.png" alt="image">
+                <img class="callbackImage d-block d-lg-none" src="img/admin/callback/image-2.png" alt="image">
               </div>
             </div>
           </div>
@@ -730,340 +721,355 @@
     <!-- modal -->
     <!-- rent -->
     <div class="modal" id="modalRent">
+      <div class="modalInner">
+        <div class="modalHead">
+          <div class="sectHead">
+            <h3 class="h3">Стать арендатором</h3>
+          </div>
 
-      <div class="modalHead">
-        <div class="sectHead">
-          <h3 class="h3">Стать арендатором</h3>
+          <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+              <path d="M20 20L4 4m16 0L4 20"></path>
+            </svg>
+          </button>
         </div>
 
-        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" tabindex="-1">
-            <path d="M20 20L4 4m16 0L4 20"></path>
-          </svg>
-        </button>
-      </div>
+        <div class="modalContent">
+          <div class="modalForm">
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Имя контактного лица</div>
+              <input type="text" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Телефон</div>
+              <input type="tel" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">E-mail</div>
+              <input type="email" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Комментарий</div>
+              <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+            </div>
 
-      <div class="modalContent">
-        <div class="modalForm">
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Имя контактного лица</div>
-            <input type="text" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Телефон</div>
-            <input type="tel" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">E-mail</div>
-            <input type="email" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Комментарий</div>
-            <textarea class="formText" name="rentComment" id="rentComment"></textarea>
-          </div>
+            <div class="formBtnW mt-4">
+              <button class="button button--brown-20 formBtn" data-fancybox-close>
+                Отменить
+              </button>
+              <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+                Отправить
+              </button>
+            </div>
 
-          <div class="formBtnW mt-4">
-            <button class="button button--brown-20 formBtn" data-fancybox-close>
-              Отменить
-            </button>
-            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
-              Отправить
-            </button>
           </div>
-
         </div>
       </div>
     </div>
 
     <!-- good -->
     <div class="modal" id="modalGood">
+      <div class="modalInner">
+        <div class="modalHead">
+          <div class="sectHead">
+            <h3 class="h3">Похвалить<br class="d-none d-lg-block"> работу рынка</h3>
+          </div>
 
-      <div class="modalHead">
-        <div class="sectHead">
-          <h3 class="h3">Похвалить<br class="d-none d-lg-block"> работу рынка</h3>
+          <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+              <path d="M20 20L4 4m16 0L4 20"></path>
+            </svg>
+          </button>
         </div>
 
-        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" tabindex="-1">
-            <path d="M20 20L4 4m16 0L4 20"></path>
-          </svg>
-        </button>
-      </div>
+        <div class="modalContent">
+          <div class="modalForm">
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+              <input type="text" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+              <input type="tel" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Текст благодарности</div>
+              <textarea class="formText" name="modalGoodComment" id="modalGoodComment"></textarea>
+            </div>
 
-      <div class="modalContent">
-        <div class="modalForm">
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
-            <input type="text" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
-            <input type="tel" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Текст благодарности</div>
-            <textarea class="formText" name="modalGoodComment" id="modalGoodComment"></textarea>
-          </div>
+            <div class="formBtnW mt-4">
+              <button class="button button--brown-20 formBtn" data-fancybox-close>
+                Отменить
+              </button>
+              <button class="button button--orange formBtn" data-fancybox data-src="#modalThanksReviews">
+                Отправить
+              </button>
+            </div>
 
-          <div class="formBtnW mt-4">
-            <button class="button button--brown-20 formBtn" data-fancybox-close>
-              Отменить
-            </button>
-            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanksReviews">
-              Отправить
-            </button>
           </div>
-
         </div>
       </div>
+
     </div>
 
     <!-- bad -->
     <div class="modal" id="modalBad">
+      <div class="modalInner">
+        <div class="modalHead">
+          <div class="sectHead">
+            <h3 class="h3">Пожаловаться на&nbsp;работу рынка</h3>
+          </div>
 
-      <div class="modalHead">
-        <div class="sectHead">
-          <h3 class="h3">Пожаловаться на&nbsp;работу рынка</h3>
+          <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+              <path d="M20 20L4 4m16 0L4 20"></path>
+            </svg>
+          </button>
         </div>
 
-        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" tabindex="-1">
-            <path d="M20 20L4 4m16 0L4 20"></path>
-          </svg>
-        </button>
-      </div>
+        <div class="modalContent">
+          <div class="modalForm">
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+              <input type="text" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+              <input type="tel" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Текст жалобы</div>
+              <textarea class="formText" name="modalBadComment" id="modalBadComment"></textarea>
+            </div>
 
-      <div class="modalContent">
-        <div class="modalForm">
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
-            <input type="text" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
-            <input type="tel" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Текст жалобы</div>
-            <textarea class="formText" name="modalBadComment" id="modalBadComment"></textarea>
-          </div>
+            <div class="formBtnW mt-4">
+              <button class="button button--brown-20 formBtn" data-fancybox-close>
+                Отменить
+              </button>
+              <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+                Отправить
+              </button>
+            </div>
 
-          <div class="formBtnW mt-4">
-            <button class="button button--brown-20 formBtn" data-fancybox-close>
-              Отменить
-            </button>
-            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
-              Отправить
-            </button>
           </div>
-
         </div>
       </div>
+
     </div>
 
     <!-- Thanks -->
     <div class="modal" id="modalThanks">
+      <div class="modalInner">
+        <div class="modalHead">
 
-      <div class="modalHead">
+          <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
 
-        <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
+          <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+              <path d="M20 20L4 4m16 0L4 20"></path>
+            </svg>
+          </button>
+        </div>
 
-        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" tabindex="-1">
-            <path d="M20 20L4 4m16 0L4 20"></path>
-          </svg>
-        </button>
-      </div>
-
-      <div class="modalContent">
-        <div class="content text--md">
-          <p>
-            Мы ценим каждую обратную связь.<br> После получения вашей жалобы мы:
-          </p>
-          <ul>
-            <li>
-              Направим заявку в ответственный отдел для детального разбора.
-            </li>
-            <li>
-              Проведём проверку указанных фактов в течение 5 рабочих дней.
-            </li>
-            <li>
-              Свяжемся с вами по указанному телефону, чтобы сообщить о принятых мерах.
-            </li>
-          </ul>
+        <div class="modalContent">
+          <div class="content text--md">
+            <p>
+              Мы ценим каждую обратную связь.<br> После получения вашей жалобы мы:
+            </p>
+            <ul>
+              <li>
+                Направим заявку в ответственный отдел для детального разбора.
+              </li>
+              <li>
+                Проведём проверку указанных фактов в течение 5 рабочих дней.
+              </li>
+              <li>
+                Свяжемся с вами по указанному телефону, чтобы сообщить о принятых мерах.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+
     </div>
 
     <!-- Thanks Reviews -->
     <div class="modal" id="modalThanksReviews">
+      <div class="modalInner">
+        <div class="modalHead">
 
-      <div class="modalHead">
+          <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
 
-        <h3 class="h3 mb-2">Спасибо<br class="d-none d-lg-block"> за ваш отзыв!</h3>
+          <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+              <path d="M20 20L4 4m16 0L4 20"></path>
+            </svg>
+          </button>
+        </div>
 
-        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" tabindex="-1">
-            <path d="M20 20L4 4m16 0L4 20"></path>
-          </svg>
-        </button>
-      </div>
-
-      <div class="modalContent">
-        <div class="content text--md">
-          <p>
-            Вы можете оставить отзыв на других площадках:
-          </p>
-          <div class="d-flex flex-column flex-sm-row gap-3 mt-4 mt-lg-5">
-            <a class="reviews-thanks-logo" href="#" target="_blank">
-              <img src="img/admin/reviews/image-1.svg" alt="image">
-            </a>
-            <a class="reviews-thanks-logo" href="#" target="_blank">
-              <img src="img/admin/reviews/image-2.svg" alt="image">
-            </a>
+        <div class="modalContent">
+          <div class="content text--md">
+            <p>
+              Вы можете оставить отзыв на других площадках:
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-3 mt-4 mt-lg-5">
+              <a class="reviews-thanks-logo" href="#" target="_blank">
+                <img src="img/admin/reviews/image-1.svg" alt="image">
+              </a>
+              <a class="reviews-thanks-logo" href="#" target="_blank">
+                <img src="img/admin/reviews/image-2.svg" alt="image">
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
 
     <!-- rent -->
     <div class="modal" id="modalRentPage">
+      <div class="modalInner">
+        <div class="modalHead">
 
-      <div class="modalHead">
+          <h3 class="h3 mb-2">Стать арендатором</h3>
 
-        <h3 class="h3 mb-2">Стать арендатором</h3>
+          <div class="modalDescr text--md mb-3">
+            Отправьте заявку и мы рассчитаем стоимость торгового места.
+          </div>
 
-        <div class="modalDescr text--md mb-3">
-          Отправьте заявку и мы рассчитаем стоимость торгового места.
+          <div class="h5 text-normal mb-2">
+            Место №123
+          </div>
+          <div class="d-flex gap-2 mb-4 mb-lg-5">
+            <span>Категория продукции</span>
+            <span class="color-orange">20 кв. м.</span>
+          </div>
+
+          <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+              <path d="M20 20L4 4m16 0L4 20"></path>
+            </svg>
+          </button>
         </div>
 
-        <div class="h5 text-normal mb-2">
-          Место №123
-        </div>
-        <div class="d-flex gap-2 mb-4 mb-lg-5">
-          <span>Категория продукции</span>
-          <span class="color-orange">20 кв. м.</span>
-        </div>
+        <div class="modalContent">
+          <div class="modalForm">
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+              <input type="text" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+              <input type="tel" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Комментарий</div>
+              <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+            </div>
+            <div class="agreement">
+              <input type="checkbox" id="agreement-rent-2" checked>
+              <label for="agreement-rent-2">
+                <div class="rect"></div>
+                <div class="agreementText">
+                  Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки
+                    персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
+                </div>
+              </label>
+            </div>
 
-        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" tabindex="-1">
-            <path d="M20 20L4 4m16 0L4 20"></path>
-          </svg>
-        </button>
+            <div class="formBtnW mt-4">
+              <button class="button button--brown-20 formBtn" data-fancybox-close>
+                Отменить
+              </button>
+              <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
+                Отправить
+              </button>
+            </div>
+
+          </div>
+        </div>
       </div>
 
-      <div class="modalContent">
-        <div class="modalForm">
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
-            <input type="text" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
-            <input type="tel" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Комментарий</div>
-            <textarea class="formText" name="rentComment" id="rentComment"></textarea>
-          </div>
-          <div class="agreement">
-            <input type="checkbox" id="agreement-rent" checked>
-            <label for="agreement-rent">
-              <div class="rect"></div>
-              <div class="agreementText">
-                Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки
-                  персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
-              </div>
-            </label>
-          </div>
-
-          <div class="formBtnW mt-4">
-            <button class="button button--brown-20 formBtn" data-fancybox-close>
-              Отменить
-            </button>
-            <button class="button button--orange formBtn" data-fancybox data-src="#modalThanks">
-              Отправить
-            </button>
-          </div>
-
-        </div>
-      </div>
     </div>
 
     <!-- modalAboutShop -->
     <div class="modal" id="modalAboutShop">
+      <div class="modalInner">
+        <div class="sectHead">
 
-      <div class="sectHead">
+          <h3 class="h3 mb-2">Оставить отзыв о&nbsp;&laquo;Название магазина&raquo;</h3>
 
-        <h3 class="h3 mb-2">Оставить отзыв о&nbsp;&laquo;Название магазина&raquo;</h3>
+          <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+              <path d="M20 20L4 4m16 0L4 20"></path>
+            </svg>
+          </button>
+        </div>
 
-        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" tabindex="-1">
-            <path d="M20 20L4 4m16 0L4 20"></path>
-          </svg>
-        </button>
-      </div>
+        <div class="modalContent">
+          <div class="modalForm">
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
+              <input type="text" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
+              <input type="tel" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Email (не обязательно)</div>
+              <input type="email" class="formInput">
+            </div>
+            <div class="inputW">
+              <div class="inputName mb-1 mb-lg-2">Ваш отзыв</div>
+              <textarea class="formText" name="rentComment" id="rentComment"></textarea>
+            </div>
+            <div class="agreement">
+              <input type="checkbox" id="agreement-rent" checked>
+              <label for="agreement-rent">
+                <div class="rect"></div>
+                <div class="agreementText">
+                  Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки
+                    персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
+                </div>
+              </label>
+            </div>
 
-      <div class="modalContent">
-        <div class="modalForm">
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Ваше имя</div>
-            <input type="text" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Телефон для обратной связи</div>
-            <input type="tel" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Email (не обязательно)</div>
-            <input type="email" class="formInput">
-          </div>
-          <div class="inputW">
-            <div class="inputName mb-1 mb-lg-2">Ваш отзыв</div>
-            <textarea class="formText" name="rentComment" id="rentComment"></textarea>
-          </div>
-          <div class="agreement">
-            <input type="checkbox" id="agreement-rent" checked>
-            <label for="agreement-rent">
-              <div class="rect"></div>
-              <div class="agreementText">
-                Согласен на обработку персональных данных в соответствии с <a href="#">политикой в отношении обработки
-                  персональных данных</a>, в том числе в целях обработки сервисом Яндекс Метрика
-              </div>
-            </label>
-          </div>
+            <div class="formBtnW mt-4">
+              <button class="button button--brown-20 formBtn" data-fancybox-close>
+                Отменить
+              </button>
+              <button class="button button--orange formBtn" data-fancybox data-src="#modalAboutThanks">
+                Отправить
+              </button>
+            </div>
 
-          <div class="formBtnW mt-4">
-            <button class="button button--brown-20 formBtn" data-fancybox-close>
-              Отменить
-            </button>
-            <button class="button button--orange formBtn" data-fancybox data-src="#modalAboutThanks">
-              Отправить
-            </button>
           </div>
-
         </div>
       </div>
+
+
     </div>
 
     <!-- modalAboutThanks -->
     <div class="modal" id="modalAboutThanks">
+      <div class="modalInner">
+        <div class="sectHead">
 
-      <div class="sectHead">
+          <h3 class="h3 mb-2">Спасибо<br> за ваш отзыв!</h3>
 
-        <h3 class="h3 mb-2">Спасибо<br> за ваш отзыв!</h3>
+          <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+              <path d="M20 20L4 4m16 0L4 20"></path>
+            </svg>
+          </button>
+        </div>
 
-        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" tabindex="-1">
-            <path d="M20 20L4 4m16 0L4 20"></path>
-          </svg>
-        </button>
-      </div>
-
-      <div class="modalContent">
-        <button class="button button--orange formBtn min-w-240 d-none d-lg-flex" data-fancybox-close>
-          Закрыть
-        </button>
+        <div class="modalContent">
+          <button class="button button--orange formBtn min-w-240 d-none d-lg-flex" data-fancybox-close>
+            Закрыть
+          </button>
+        </div>
       </div>
     </div>
   </div>

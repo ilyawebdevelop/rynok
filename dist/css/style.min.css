@@ -16651,17 +16651,18 @@ a.color-orange:hover {
   width: 640px;
   background-color: var(--background);
   border-radius: 48px;
-  padding: 48px;
+  padding: 0 5px 0 0;
   color: var(--main-color);
   background-image: url("../img/modal/modal-flower.svg");
   background-repeat: no-repeat;
   background-position: top right;
   height: fit-content;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .modal {
-    padding: 32px;
     border-radius: 40px;
+    padding: 0 3px 0 0;
   }
 }
 @media (max-width: 575px) {
@@ -16727,6 +16728,21 @@ a.color-orange:hover {
 
 #modalAboutShop .h3 {
   max-width: 490px;
+}
+
+.modalInner {
+  overflow-y: auto;
+  padding: 48px 43px 48px 48px;
+  max-height: 100%;
+}
+@media (max-width: 991px) {
+  .modalInner {
+    padding: 20px 17px 20px 20px;
+  }
+}
+
+#modalAboutShop .sectHead {
+  max-width: calc(100% - 40px);
 }
 
 .tabs__nav {
@@ -18340,7 +18356,7 @@ a.color-orange:hover {
 
 @media (max-width: 575px) {
   .catsSlider-sm-2 {
-    padding-right: 15px;
+    padding-right: 100px;
     overflow: visible;
   }
 }
@@ -18407,7 +18423,16 @@ a.color-orange:hover {
 }
 @media (max-width: 991px) {
   .profileNav ul {
-    flex-direction: column;
+    overflow-x: auto;
+    column-gap: 4px;
+  }
+}
+@media (max-width: 575px) {
+  .profileNav ul {
+    margin-left: -12px;
+    padding-left: 12px;
+    margin-right: -12px;
+    padding-right: 12px;
   }
 }
 .profileNav ul li a {
@@ -18422,6 +18447,7 @@ a.color-orange:hover {
   padding-right: 8px;
   padding-top: 12px;
   padding-bottom: 12px;
+  white-space: nowrap;
 }
 @media (max-width: 1199px) {
   .profileNav ul li a {
@@ -18431,7 +18457,6 @@ a.color-orange:hover {
 @media (max-width: 991px) {
   .profileNav ul li a {
     font-size: 18px;
-    border-bottom: 1px solid var(--brown50);
   }
 }
 .profileNav ul li a::before {
